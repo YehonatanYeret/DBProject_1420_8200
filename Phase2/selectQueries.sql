@@ -51,7 +51,7 @@ GROUP BY blood_type
 ORDER BY treatment_count DESC
 LIMIT 1;
 
--- 4: Top Research Doctor Hired in the Last 5 Years
+-- 4: Top 3 Research Doctors Hired in the Last 5 Years
 SELECT p.id_number, first_name, last_name, citation_count
 FROM research_doctor rd
 JOIN medical_staff ms ON rd.id_number = ms.id_number

@@ -1,15 +1,15 @@
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/22/2003', '684817097', '891330154', 'ZIQ0469');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/10/1991', '116510619', '334318708', 'GM714');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/22/2025', '58701459', '474016075', 'UA859');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/01/2008', '182771470', '405830989', 'UZF58735');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/27/2015', '839622744', '859981199', 'AIDT821');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/10/1991', '116510619', '334318708', 'ZIQ0469');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/22/2025', '58701459', '474016075', 'ZIQ0469');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/01/2008', '182771470', '405830989', 'ZIQ0469');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/27/2015', '839622744', '859981199', 'ZIQ0469');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/20/1992', '650863972', '246754834', 'DQLW221');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/08/2005', '406278086', '315493568', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/11/2006', '263792382', '927025103', 'JG2523');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/03/2006', '483178052', '754675746', 'RSTA22808');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/18/1995', '700995214', '877016336', 'XOJ42657');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/07/2025', '287257203', '392980528', 'QPHR07586');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/16/2018', '672219920', '846841031', 'FZ067');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/16/2018', '672219920', '846841031', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/30/1993', '972094365', '201497879', 'LEOMZ8609');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/16/2005', '688861562', '74401805', 'QP7388');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/22/2009', '438928969', '734797544', 'TB7902');
@@ -18,9 +18,9 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/06/2001', '567592516', '303587227', 'DW112');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/16/2017', '99389219', '315493568', 'RLBID8580');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/01/1991', '240833605', '862277741', 'ES3435');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/11/1993', '215794856', '281656117', 'RTQSN07500');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/11/1993', '215794856', '281656117', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/18/2008', '182771470', '392980528', 'PDES2464');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/13/2006', '192233479', '626303438', 'BYTHZ03238');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/13/2006', '192233479', '626303438', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/07/1998', '900825535', '32062029', 'JSZB43405');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/16/2006', '333477893', '896983920', 'OT98471');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('06/14/2007', '321859903', '30748059', 'GFCOC584');
@@ -35,7 +35,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/18/2012', '162877600', '516555850', 'LH8117');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/02/2005', '833528786', '96524598', 'ZZRB1122');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/10/1998', '319530389', '928514428', 'SC4908');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/17/2012', '287257203', '343297534', 'FQESX57214');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/17/2012', '287257203', '343297534', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/09/1995', '236167329', '287303120', 'TACEF0720');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/04/2001', '966780577', '284513440', 'YS7333');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/20/1994', '674289245', '546538456', 'ZP7882');
@@ -43,7 +43,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/11/2002', '65038757', '694522893', 'CBES170');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('06/02/2021', '767344494', '191967872', 'OOOK044');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/13/2006', '330192070', '180690768', 'TPRT62726');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/18/1996', '634009713', '191967872', 'QTJ00351');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/18/1996', '634009713', '191967872', 'BQT949');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/08/1991', '921821598', '303587227', 'ZVOMV44079');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('06/02/2004', '839746681', '191967872', 'HI553');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/18/2025', '913315253', '891330154', 'OLI740');
@@ -76,7 +76,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/08/2021', '686409144', '395159167', 'ROEW486');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/18/2025', '913315253', '891330154', 'IJEN4614');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/04/2005', '238583133', '720154996', 'METD10077');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/13/2006', '330192070', '180690768', 'GSR96319');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/13/2006', '330192070', '180690768', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/18/1990', '364374445', '324273655', 'LLMKN946');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/19/1994', '492711123', '212884204', 'IHS006');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/21/2007', '616569292', '134664019', 'EYTKP879');
@@ -97,7 +97,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/30/2013', '994767062', '395159167', 'XULH3351');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/01/2017', '833528786', '896983920', 'ETH433');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/03/2023', '485633825', '647584179', 'LDRVH7154');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/07/2003', '334892898', '725905515', 'RVDIM91661');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/07/2003', '334892898', '725905515', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/18/1994', '922054960', '980437090', 'CD77267');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/28/2006', '934306655', '464619393', 'SCILI31009');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/25/2003', '680068343', '333374072', 'OE66765');
@@ -147,7 +147,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/18/1996', '869909476', '900130040', 'VA121');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/25/1999', '307109937', '273924721', 'PBZI751');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/02/2006', '991319687', '333374072', 'FQD4681');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/18/1996', '634009713', '191967872', 'XG406');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/18/1996', '634009713', '191967872', 'WKKLD62847');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/18/2025', '913315253', '891330154', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/27/2013', '402749668', '678035261', 'DFZWR1180');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/12/2000', '318972706', '513477980', 'OY209');
@@ -200,7 +200,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/02/1998', '191930654', '975639498', 'LTQMI047');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/18/1994', '922054960', '980437090', 'ONX136');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/22/2025', '58701459', '474016075', 'YDFWH928');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/22/2016', '555573553', '880096981', 'CNND198');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/22/2016', '555573553', '880096981', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/04/2009', '485633825', '927025103', 'CC03527');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/21/1996', '369769618', '399202478', 'HGATP035');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('05/04/2008', '669411529', '86946437', 'BQTGN0399');
@@ -221,7 +221,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/16/2023', '116510619', '334284578', 'JQFG155');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/18/1992', '908871401', '927025103', 'VGD6134');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/02/2003', '458989586', '492085346', 'EA7045');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/09/1995', '646210865', '859981199', 'IELJ98857');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/09/1995', '646210865', '859981199', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/22/2025', '760154472', '980437090', 'YZPK151');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/05/2007', '99389219', '546807206', 'WXSZ79315');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('02/18/2014', '836450136', '484466165', 'EXYWR1045');
@@ -275,7 +275,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/10/2002', '806674329', '916816529', 'YIDD698');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/08/2008', '641034477', '474016075', 'DUOS01044');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/01/2019', '893507902', '594380618', 'AEJHC17324');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/18/1992', '908871401', '927025103', 'UM66095');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/18/1992', '908871401', '927025103', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/17/2007', '277646287', '147080751', 'CN945');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/16/1991', '333246549', '964956772', 'NMZH54296');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/13/2011', '800933298', '938841523', 'AE981');
@@ -317,7 +317,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('07/03/2000', '699538287', '134664019', 'GXUD633');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('12/01/2017', '833528786', '896983920', 'IWS89770');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('01/05/2009', '414727820', '666400764', 'UNBN671');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/10/1998', '319530389', '928514428', 'YPGK5627');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/10/1998', '319530389', '928514428', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('10/01/1999', '240833605', '949245467', 'FALL684');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/25/2003', '680068343', '333374072', 'XMKTX07652');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/09/1995', '236167329', '287303120', 'JO4766');
@@ -335,7 +335,7 @@ INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_i
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('11/07/2024', '263792382', '876789077', 'PT61753');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/07/2008', '901110153', '834547406', 'OHQ17971');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('09/06/2020', '238583133', '167228202', 'BDO3214');
-INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/10/2012', '559726337', '779194191', 'RXAZE683');
+INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('03/10/2012', '559726337', '779194191', 'XQ46404');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('08/30/1999', '767344494', '928227190', 'WPHTR4207');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/13/2008', '132327419', '359259818', 'HC6687');
 INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code) VALUES ('04/04/2007', '965054180', '954582621', 'DJ50013');
