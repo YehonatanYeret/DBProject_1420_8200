@@ -185,4 +185,4 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ![Delete Query 3](Phase2/images/before-delete3.png)
     ###### After Delete
     ![Delete Query 3](Phase2/images/after-delete3.png)
-    ###### נמחקו 301 תרופות בשאילתה זו
+    ###### נמחקו 390 תרופות בשאילתה זו

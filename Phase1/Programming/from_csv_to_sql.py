@@ -41,6 +41,11 @@ def process_data_folder(data_folder, output_folder):
     Iterates over each CSV file in the specified folder,
     converts it to SQL INSERT commands, and saves the output to the output folder.
     """
+
+    # Ensure the data folder exists
+    if not os.path.exists(data_folder):
+        raise FileNotFoundError(f"The specified data folder does not exist: {data_folder}")
+
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -60,8 +65,12 @@ def process_data_folder(data_folder, output_folder):
 
 
 if __name__ == '__main__':
-    # Folder containing CSV files
-    data_folder = input("Enter the folder path containing CSV files: ")
-    # Folder to store SQL INSERT command files
-    output_folder = input("Enter the folder path to store SQL files: ")
-    process_data_folder(data_folder, output_folder)
+    try:
+        # Folder containing CSV files
+        data_folder = input("Enter the folder path containing CSV files: ")
+        # Folder to store SQL INSERT command files
+        output_folder = input("Enter the folder path to store SQL files: ")
+        process_data_folder(data_folder, output_folder)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        print("Please check the folder paths and try again.")
