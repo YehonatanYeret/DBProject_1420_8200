@@ -1,4 +1,5 @@
 # Database Project
+###### *By Yehonatan Yeret && Maor Noy*
 
 ## Table of Contents
 - [Phase 1 - Database Design & Implementation](#phase-1---database-design--implementation)
