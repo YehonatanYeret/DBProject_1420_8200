@@ -13,6 +13,7 @@
     - [Backup and Restore](#backup-and-restore)
 - [Phase 2 - Queries](#phase-2---queries)
     - [Select Queries](#select-queries)
+    - [Delete Queries](#delete-queries)
 
 ---
 
@@ -161,3 +162,27 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ![Select Query 8](Phase2/images/Select8.png)
 
 
+
+### Delete Queries
+📁 [The Delete Queries File](Phase2/deleteQueries.sql)
+### הסבר השאילתות:
+1. **מחיקת מטופלים שלא קיבלו טיפול ב15 שנה האחרונות**: מסננת את המטופלים שלא קיבלו טיפול ב-15 השנים האחרונות ומוחקת אותם מהמאגר.
+    ###### Before Delete
+    ![Delete Query 1](Phase2/images/before-delete1.png)
+    ###### After Delete
+    ![Delete Query 1](Phase2/images/after-delete1.png)
+    ###### נמחקו 256 מטופלים בשאילתה זו 
+
+2. **מחיקת מחלקות שאין בהן רופאים או מטופלים**: מסננת את המחלקות שאין בהן רופאים ומוחקת אותן מהמאגר.
+    ###### Before Delete
+    ![Delete Query 2](Phase2/images/before-delete2.png)
+    ###### After Delete
+    ![Delete Query 2](Phase2/images/after-delete2.png)
+    ###### נמחקו 301 מחלקות בשאילתה זו
+
+3. **מחיקת תרופות שלא היו בשימוש אצל מעל 7% מהמטופלים**: מסננת את התרופות שלא היו בשימוש אצל מעל 7% מהמטופלים ומוחקת אותן מהמאגר.
+    ###### Before Delete
+    ![Delete Query 3](Phase2/images/before-delete3.png)
+    ###### After Delete
+    ![Delete Query 3](Phase2/images/after-delete3.png)
+    ###### נמחקו 301 תרופות בשאילתה זו
