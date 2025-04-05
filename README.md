@@ -140,7 +140,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ![Select Query 3](Phase2/images/Select3.png)
 
 
-4. **החוקר המצטיין מבין הרופאים החדשים**: מציגה את שלושת הרופאי מחקר שקיבלו הכי הרבה ציטוטים, מבין אלו שהצטרפו ב-5 השנים
+4. **החוקרים המצטיינים מבין הרופאים החדשים**: מציגה את שלושת הרופאי מחקר שקיבלו הכי הרבה ציטוטים, מבין אלו שהצטרפו ב-5 השנים
    האחרונות.
     ![Select Query 4](Phase2/images/Select4.png)
 
@@ -157,6 +157,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ![Select Query 7](Phase2/images/Select7.png)
 
 
-8. **המחלקה עם הכי הרבה מטופלים ב-6 החודשים האחרונים**: מציגה איזו מחלקה טיפלה בהכי הרבה מטופלים שונים במהלך חצי השנה
-   האחרונה.
+8.  **המחלקה עם הכי הרבה מטופלים ב-6 החודשים האחרונים**: מציגה איזו מחלקה טיפלה בהכי הרבה מטופלים שונים במהלך חצי השנה האחרונה.
     ![Select Query 8](Phase2/images/Select8.png)
+
+
