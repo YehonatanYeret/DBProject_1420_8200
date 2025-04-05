@@ -398,3 +398,13 @@ INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('5/
 INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('10/13/1953', '4:28 AM', '8:15 PM', '103478442');
 INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('9/19/1991', '3:14 PM', '11:32 PM', '684807629');
 INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('7/18/2013', '5:52 AM', '7:14 AM', '870188525');
+
+-- After updating the table I had those values
+
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('9/25/1941', '2:51 PM', '12:52 PM', '3593165');
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('10/25/1941', '2:51 PM', '12:52 PM', '3593165');
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('11/25/1941', '2:51 PM', '12:52 PM', '3593165');
+
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('9/25/1941', '2:51 PM', '12:52 PM', '8137264');
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('10/25/1941', '2:51 PM', '12:52 PM', '8137264');
+INSERT INTO staff_shift (shift_date, start_time, end_time, staff_id) VALUES ('11/25/1941', '2:51 PM', '12:52 PM', '8137264');

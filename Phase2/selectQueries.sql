@@ -12,6 +12,7 @@ LEFT JOIN treatment t ON ad.id_number = t.attending_doctor_id
                       AND t.treatment_date = ss.shift_date
 JOIN person p ON ad.id_number = p.id_number
 GROUP BY ss.shift_date, ss.start_time, ss.end_time, ad.id_number, p.first_name, p.last_name
+HAVING COUNT(DISTINCT t.patient_id) > 0
 ORDER BY ss.shift_date DESC, ss.start_time;
 
 -- 2: Most Common Blood Type per Department
