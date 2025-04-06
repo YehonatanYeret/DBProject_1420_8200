@@ -24,8 +24,6 @@ ALTER TABLE medication
 
 -- 5. Person Table Constraints
 ALTER TABLE person
-    ADD CONSTRAINT unique_phone_number UNIQUE (phone_number);  -- Enforce unique phone numbers
-ALTER TABLE person
     ADD CONSTRAINT chk_id_number_range CHECK (id_number > 0 AND id_number < 9999999999);  -- Validate id_number within a realistic range
 
 
@@ -52,17 +50,10 @@ ALTER TABLE nurse
 
 -- 9. Research Doctor Table Constraints
 ALTER TABLE research_doctor
-    ADD CONSTRAINT chk_research_date_not_future CHECK (research_start_date <= CURRENT_DATE);  -- Research start date cannot be in the future
-ALTER TABLE research_doctor
     ADD CONSTRAINT chk_citation_count_non_negative CHECK (citation_count >= 0);  -- Citation count cannot be negative
 
 
--- 11. Staff Shift Table Constraints
-ALTER TABLE staff_shift
-    ADD CONSTRAINT chk_shift_time_order CHECK (start_time < end_time);  -- Ensure start time is before end time
-
-
--- 12. Treatment Medication Table Constraints
+-- 10. Treatment Medication Table Constraints
 ALTER TABLE treatment_medication
     ADD CONSTRAINT chk_medication_code_format CHECK (medication_code ~ '^[A-Za-z0-9\-]+$');  -- Example format: alphanumeric with dashes
 

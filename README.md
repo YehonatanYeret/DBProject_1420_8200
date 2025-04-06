@@ -195,8 +195,160 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 #### Update Queries
 📁 [The Update Queries File](Phase2/updateQueries.sql)
 
+---
 
 ### Constraints
 📁 [The Constraint File](Phase2/constraints.sql)
-### הסבר השאילתות:
+
+בשלב הזה הוספנו **אילוצים** ל-12 טבלאות במסד הנתונים כדי להבטיח את תקינות הנתונים ולמנוע טעויות כמו ערכים שגויים או כפולים.
+
+לכל אילוץ צורף ניסיון להכניס נתון שמפר את האילוץ, ונצפתה שגיאה מתאימה.  
+מצורפות תמונות **לפני** ו-**אחרי** לכל ניסיון כזה.
+
+---
+
+## List of Constraints for Each Table
+
+### Address Table
+```sql
+ALTER TABLE address
+ADD CONSTRAINT chk_zip_code_format CHECK (zip_code ~ '^[0-9]{5}$');
+```
+מוודא שקוד הדואר מכיל בדיוק 5 ספרות. 
+
+ ![insert error](Phase2/images/constraint1.png) 
+
+---
+
+### Lab Table
+```sql
+ALTER TABLE lab
+ADD CONSTRAINT chk_lab_num_technicians CHECK (number_of_technicians >= 1);
+```
+ חייב להיות לפחות טכנאי אחד במעבדה.
+
+ ![insert error](Phase2/images/constraint2.png)
+
+---
+
+### Department Table
+```sql
+ALTER TABLE department
+ADD CONSTRAINT chk_department_beds CHECK (number_of_beds >= 0);
+```
+ מספר מיטות לא יכול להיות שלילי.
+
+ ![insert error](Phase2/images/constraint3A.png)
+
+
+```sql
+ALTER TABLE department
+ADD CONSTRAINT chk_department_phone_length CHECK (LENGTH(department_phone_number) >= 7);
+```
+
+ מספר טלפון חייב להיות לפחות באורך 7 ספרות.
+
+ ![insert error](Phase2/images/constraint3B.png)
+
+---
+
+### Medication Table
+```sql
+ALTER TABLE medication
+ADD CONSTRAINT chk_medication_price_positive CHECK (price > 0);
+```
+מחיר חייב להיות חיובי. 
+    
+  ![insert error](Phase2/images/constraint4A.png)
+```sql
+ALTER TABLE medication
+ADD CONSTRAINT chk_medication_name_length CHECK (LENGTH(medication_name) >= 2);
+```
+ שם התרופה חייב לכלול לפחות שני תווים.
+
+ ![insert error](Phase2/images/constraint4B.png)
+
+---
+
+### Person Table
+```sql
+ALTER TABLE person
+ADD CONSTRAINT chk_id_number_range CHECK (id_number > 0 AND id_number < 9999999999);
+```
+ ת"ז בתחום הגיוני – בין 1 ל-9999999999.
+ ![insert error](Phase2/images/constraint5.png)
+
+---
+
+### Patient Table
+```sql
+ALTER TABLE patient
+ADD CONSTRAINT chk_birth_date_not_future CHECK (birth_date <= CURRENT_DATE);
+```
+תאריך לידה לא יכול להיות בעתיד. 
+![insert error](Phase2/images/constraint6A.png)
+```sql
+ALTER TABLE patient
+ADD CONSTRAINT chk_valid_blood_type CHECK (blood_type IN (
+  'A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-', 'A2-', 'A1+'));
+```
+ סוג דם חייב להיות אחד מהאפשרויות התקינות.
+ ![insert error](Phase2/images/constraint6B.png)
+
+---
+
+### Medical Staff Table
+```sql
+ALTER TABLE medical_staff
+ADD CONSTRAINT chk_hire_date_not_future CHECK (hire_date <= CURRENT_DATE);
+```
+תאריך התחלה לא יכול להיות בעתיד. 
+ ![insert error](Phase2/images/constraint7A.png)
+
+```sql
+ALTER TABLE medical_staff
+ADD CONSTRAINT chk_salary_minimum CHECK (salary >= 5000);
+```
+שכר מינימלי – 5000. 
+ ![insert error](Phase2/images/constraint7B.png)
+
+```sql
+ALTER TABLE medical_staff
+ADD CONSTRAINT chk_email_format CHECK (email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$');
+```
+ אימייל חייב להיות בפורמט תקני.
+ ![insert error](Phase2/images/constraint7C.png)
+
+---
+
+### Nurse Table
+```sql
+ALTER TABLE nurse
+ADD CONSTRAINT chk_valid_shift_type CHECK (shift_type IN ('day', 'night'));
+```
+ ערך חוקי למשמרת: רק "day" או "night".
+ ![insert error](Phase2/images/constraint8.png)
+---
+
+### Research Doctor Table
+```sql
+ALTER TABLE research_doctor
+ADD CONSTRAINT chk_citation_count_non_negative CHECK (citation_count >= 0);
+```
+ מספר ציטוטים לא שלילי.
+![insert error](Phase2/images/constraint9.png)
+
+---
+
+### Treatment medication Table
+```sql
+ALTER TABLE treatment_medication
+ADD CONSTRAINT chk_medication_code_format CHECK (medication_code ~ '^[A-Za-z0-9\-]+$');  -- Example format: alphanumeric with dashes
+```
+קוד תרופה חייב להיות בפורמט חוקי (אלפאנומרי עם מקפים).
+![insert error](Phase2/images/constraint10.png)
+
+---
+
+
 
