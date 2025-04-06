@@ -33,7 +33,7 @@ ALTER TABLE person
 ALTER TABLE patient
     ADD CONSTRAINT chk_birth_date_not_future CHECK (birth_date <= CURRENT_DATE);  -- Birth dates cannot be in the future
 ALTER TABLE patient
-    ADD CONSTRAINT chk_valid_blood_type CHECK (blood_type IN ('A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'));  -- Only allow valid blood types
+    ADD CONSTRAINT chk_valid_blood_type CHECK (blood_type IN ('A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-', 'A2-', 'A1+'));  -- Only allow valid blood types
 
 
 -- 7. Medical Staff Table Constraints
@@ -47,7 +47,7 @@ ALTER TABLE medical_staff
 
 -- 8. Nurse Table Constraints
 ALTER TABLE nurse
-    ADD CONSTRAINT chk_valid_shift_type CHECK (shift_type IN ('Day', 'Night', 'Weekend'));  -- Only valid shift types
+    ADD CONSTRAINT chk_valid_shift_type CHECK (shift_type IN ('day', 'night'));  -- Only valid shift types
 
 
 -- 9. Research Doctor Table Constraints
@@ -57,19 +57,12 @@ ALTER TABLE research_doctor
     ADD CONSTRAINT chk_citation_count_non_negative CHECK (citation_count >= 0);  -- Citation count cannot be negative
 
 
--- 10. Treatment Table Constraints
-ALTER TABLE treatment
-    ADD CONSTRAINT chk_treatment_date_not_future CHECK (treatment_date <= CURRENT_DATE);  -- Treatments cannot be scheduled in the future
-
-
--- 12. Staff Shift Table Constraints
+-- 11. Staff Shift Table Constraints
 ALTER TABLE staff_shift
     ADD CONSTRAINT chk_shift_time_order CHECK (start_time < end_time);  -- Ensure start time is before end time
-ALTER TABLE staff_shift
-    ADD CONSTRAINT chk_shift_date_not_future CHECK (shift_date <= CURRENT_DATE);  -- Shifts cannot be scheduled in the future
 
 
--- 13. Treatment Medication Table Constraints
+-- 12. Treatment Medication Table Constraints
 ALTER TABLE treatment_medication
     ADD CONSTRAINT chk_medication_code_format CHECK (medication_code ~ '^[A-Za-z0-9\-]+$');  -- Example format: alphanumeric with dashes
 

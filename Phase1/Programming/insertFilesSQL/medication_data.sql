@@ -276,7 +276,7 @@ INSERT INTO medication (medication_code, medication_name, price) VALUES ('YIDD69
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('DUOS01044', 'justo lacinia eget tincidunt', '674.91');
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('AEJHC17324', 'tortor sollicitudin mi sit amet', '448.28');
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('UM66095', 'pretium', '624.85');
-INSERT INTO medication (medication_code, medication_name, price) VALUES ('CN945', 'a', '220.47');
+INSERT INTO medication (medication_code, medication_name, price) VALUES ('CN945', 'aa', '220.47');
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('NMZH54296', 'elementum pellentesque quisque porta', '817.88');
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('AE981', 'ipsum primis in', '590.33');
 INSERT INTO medication (medication_code, medication_name, price) VALUES ('EUA2594', 'quis', '977.47');

@@ -11,7 +11,7 @@ zip_code,city,street,apartment_number
 99211,Gualaceo,6 Spohn Hill,2
 83318,Mogilany,93671 Hauk Alley,11
 43039,Jiandou,538 Dapin Park,8
-1450,Jeziora Wielkie,31 Karstens Terrace,15
+01450,Jeziora Wielkie,31 Karstens Terrace,15
 69665,El Hamma,6101 Walton Court,13
 72267,Liuji,679 Westport Place,12
 50016,Bhokadoke,09613 Mandrake Street,12
@@ -20,29 +20,29 @@ zip_code,city,street,apartment_number
 67004,Shaxi,41 Stang Way,2
 70548,Ambato,3928 Hermina Lane,14
 34968,Lijiazui,773 Spenser Junction,8
-3475,Gamut,7 Reindahl Way,13
+03475,Gamut,7 Reindahl Way,13
 63462,Overyata,4 Kinsman Street,4
 65747,Bordeaux,318 Bartillon Trail,9
 79408,Luleå,3 Iowa Road,8
 10640,Choujiang,61694 4th Place,9
-6905,Jinanten,86 Hansons Plaza,6
+06905,Jinanten,86 Hansons Plaza,6
 52646,Ciemas,6432 Kennedy Junction,12
 71460,Patrocínio,723 Rieder Trail,14
 64662,Tukums,0 Delaware Avenue,4
 13809,Belyy Yar,276 Fallview Street,10
 31770,Huanggang,73 Anthes Way,11
 10093,Vredendal,36901 Hoffman Lane,9
-5227,Liufu,486 Caliangt Avenue,5
-951,Vetluzhskiy,962 Rigney Junction,13
+05227,Liufu,486 Caliangt Avenue,5
+00951,Vetluzhskiy,962 Rigney Junction,13
 17668,Kwekwe,469 Sutherland Street,5
 57623,Mangaran,1 6th Trail,3
-9483,Kotli Lohārān,0 Dayton Park,14
+09483,Kotli Lohārān,0 Dayton Park,14
 81057,Krajan Sale,7 Burrows Park,1
-9074,Pukë,2 Brentwood Place,12
+09074,Pukë,2 Brentwood Place,12
 42120,Bolnisi,8 Nelson Trail,12
 14823,Catamayo,40 Truax Court,2
 23615,Mosfilotí,47530 Division Road,9
-7666,Čerčany,0596 Onsgard Center,1
+07666,Čerčany,0596 Onsgard Center,1
 49864,Mathambgwane,4954 Shasta Center,7
 58163,Baler Baleagung,80044 Fordem Trail,7
 34170,Savonranta,9069 Onsgard Plaza,5
@@ -56,7 +56,7 @@ zip_code,city,street,apartment_number
 21011,Vila Viçosa,26 Hagan Center,4
 49629,Vänersborg,7536 Granby Terrace,13
 52490,Khust,9 Hanover Avenue,11
-3648,København,96487 Brentwood Road,3
+03648,København,96487 Brentwood Road,3
 89140,Działdowo,7 Caliangt Plaza,13
 71671,Liloy,69132 Montana Terrace,6
 55737,Bududa,9830 Welch Court,12
@@ -64,7 +64,7 @@ zip_code,city,street,apartment_number
 60944,Śródmieście,57 Maywood Circle,7
 28094,Aqaba,27423 Pond Crossing,4
 23616,Jiulong,457 Canary Street,8
-760,Xintai,40 Pennsylvania Alley,4
+00760,Xintai,40 Pennsylvania Alley,4
 99438,Macedo de Cavaleiros,2 Londonderry Trail,1
 25686,Şanā’,01 Commercial Center,8
 66354,Xiangyangpu,15 Mallard Circle,9
@@ -91,7 +91,7 @@ zip_code,city,street,apartment_number
 75232,Ning’an,91243 Eastwood Way,1
 83122,Vermil,293 Bay Terrace,7
 99388,Gunung,9 Dryden Road,12
-9692,Piteå,82 Forest Dale Way,7
+09692,Piteå,82 Forest Dale Way,7
 43830,Lengkeng,456 Waxwing Drive,5
 31888,Três Lagoas,56 Burrows Park,3
 83884,Merapit,867 Upham Court,11
@@ -102,7 +102,7 @@ zip_code,city,street,apartment_number
 77887,Ćićevac,897 Jenna Plaza,7
 76738,Triteh,489 American Ash Plaza,11
 20965,San Isidro,31 Arapahoe Pass,13
-4036,Erdaobaihe,64383 Corben Pass,9
+04036,Erdaobaihe,64383 Corben Pass,9
 80321,Malicboy,927 Derek Road,1
 63181,Tafí del Valle,4 Londonderry Center,12
 26589,Milići,4 Tomscot Pass,1
@@ -112,17 +112,17 @@ zip_code,city,street,apartment_number
 29204,Ivoti,5 Schiller Drive,4
 98766,Las Palomas,9654 Del Mar Junction,6
 88820,Piñahan,48333 Dawn Avenue,10
-8431,Hekou,2 Red Cloud Crossing,15
+08431,Hekou,2 Red Cloud Crossing,15
 77791,Guandian,4295 Declaration Point,15
 76412,Sarongan,64 Gateway Alley,13
 95239,Nam Som,8369 Delladonna Drive,7
-116,Laibin,9 Blackbird Hill,10
+00116,Laibin,9 Blackbird Hill,10
 51761,Tongyangdao,5 Dapin Center,13
 84612,Shahr-e Bābak,491 Scoville Point,10
 93492,Bo Phloi,2849 Pond Crossing,13
 68051,Lilla Edet,38601 Alpine Lane,1
 64688,Eleftheroúpolis,461 Jackson Park,15
-2082,Leipzig,9789 Golf Plaza,15
+02082,Leipzig,9789 Golf Plaza,15
 57999,Abaza,27 Linden Hill,10
 11686,Nidek,077 Fallview Alley,13
 82619,Grand Forks,04 Lakewood Gardens Trail,8
@@ -130,17 +130,17 @@ zip_code,city,street,apartment_number
 11435,Paucarbamba,6 High Crossing Circle,9
 34772,Chimtāl,14409 Nevada Road,9
 58204,Makoua,6715 Autumn Leaf Crossing,3
-6611,Pimenta Bueno,455 Memorial Junction,11
+06611,Pimenta Bueno,455 Memorial Junction,11
 83536,Chãos,316 Lindbergh Court,2
 98930,Ashcroft,40 Southridge Avenue,3
 10592,Shahr-e Şafā,777 Forest Lane,8
 36615,Kiuola,157 Thompson Trail,8
 69450,Estância,380 Little Fleur Terrace,6
-52,Baguim do Monte,74458 Goodland Center,8
+00052,Baguim do Monte,74458 Goodland Center,8
 70772,Yokohama,2106 Waxwing Way,4
 29139,Kawasaki,327 Huxley Pass,9
-8136,Sylvan Lake,8700 Ryan Court,13
-7568,Juai,78 Shasta Plaza,13
+08136,Sylvan Lake,8700 Ryan Court,13
+07568,Juai,78 Shasta Plaza,13
 20126,Puerto Maldonado,8 Magdeline Terrace,11
 21067,Santa Catarina Barahona,2 Pine View Lane,15
 28743,Moss,1 Toban Road,14
@@ -161,18 +161,18 @@ zip_code,city,street,apartment_number
 47729,Bergen,65 Clove Hill,15
 22105,Stanowice,51043 Bashford Center,4
 51978,Hrvace,438 Laurel Crossing,8
-4728,Sloboda,424 Schiller Way,9
+04728,Sloboda,424 Schiller Way,9
 49265,Governador Valadares,5 Autumn Leaf Crossing,14
-5498,Pervomaysk,4 Oakridge Street,5
+05498,Pervomaysk,4 Oakridge Street,5
 74028,Mancos,80091 Fallview Center,11
-3830,Muzambinho,7 Debra Court,6
+03830,Muzambinho,7 Debra Court,6
 80897,Chenhu,6 Lerdahl Point,15
 24391,Kobelyaky,9593 Fulton Pass,12
 16415,Kajar,89040 Chinook Street,15
 46289,Jinhe,3 Sommers Avenue,9
 24686,San Pascual,43 Loomis Terrace,13
 24816,Saba Yoi,98 Heath Place,14
-4721,Duvergé,18412 Lakewood Gardens Avenue,6
+04721,Duvergé,18412 Lakewood Gardens Avenue,6
 81138,La Esperanza,78 Old Shore Drive,2
 43585,Nanjia,57 Messerschmidt Center,5
 48301,Wanjiazhuang,94 Reinke Trail,8
@@ -190,7 +190,7 @@ zip_code,city,street,apartment_number
 32650,Tierp,4 Pennsylvania Hill,15
 99898,Jiamiao,16784 Bartillon Drive,5
 49079,Panxi,08 Golden Leaf Plaza,12
-7082,Teknāf,7 Maple Wood Lane,13
+07082,Teknāf,7 Maple Wood Lane,13
 25430,Arroyo Seco,66 Hansons Circle,3
 40863,Wasogolo,6 Claremont Center,13
 69582,Emmeloord,885 Pine View Crossing,3
@@ -226,7 +226,7 @@ zip_code,city,street,apartment_number
 45552,Cértegui,06 Bartelt Pass,15
 28939,Takāb,3778 Amoth Terrace,12
 19064,Diancun,8 Waubesa Pass,11
-4167,Firá,75259 Heath Parkway,5
+04167,Firá,75259 Heath Parkway,5
 19909,Seara,5 Meadow Ridge Parkway,4
 43491,Erbil,0063 Hanson Trail,6
 72581,Krasna,18497 Tennessee Terrace,6
@@ -237,7 +237,7 @@ zip_code,city,street,apartment_number
 16483,Kuching,1 Swallow Lane,3
 82550,Miraflores,119 Morning Hill,4
 71869,Phú Vang,89056 Artisan Road,10
-9003,Laval,7 Mandrake Court,6
+09003,Laval,7 Mandrake Court,6
 40867,Nanmuping,6 Hazelcrest Park,2
 72360,Apoya,9530 Miller Parkway,13
 80185,Makar’yev,492 Upham Avenue,11
@@ -271,7 +271,7 @@ zip_code,city,street,apartment_number
 21103,Yanling,081 Delaware Crossing,4
 33277,Mahaica Village,7678 Cardinal Circle,2
 43818,Al Abyār,2 International Point,8
-9256,Nicoya,8 Arrowood Park,8
+09256,Nicoya,8 Arrowood Park,8
 70344,Dong Charoen,7 Claremont Court,3
 43171,Krajan Selatan,57015 5th Pass,10
 27683,Hołoby,28 Namekagon Street,6
@@ -301,12 +301,12 @@ zip_code,city,street,apartment_number
 63475,Bairro,3514 Arapahoe Center,3
 86612,Fairview,6 Dryden Avenue,5
 38541,Fūman,8 Kinsman Pass,8
-1540,Jiangdulu,779 Browning Court,15
+01540,Jiangdulu,779 Browning Court,15
 75221,Oued Laou,138 Dakota Hill,14
 95747,Rustam jo Goth,73 3rd Circle,5
 60931,Kolindrós,5 Lien Hill,7
 31823,Xuanhua,1 Village Green Avenue,12
-2224,Bergvliet,3702 South Terrace,6
+02224,Bergvliet,3702 South Terrace,6
 52355,Murmashi,4 Summit Alley,9
 57031,Kinel’-Cherkassy,074 Scoville Way,14
 99824,Baoyang,94 Novick Place,5
@@ -323,7 +323,7 @@ zip_code,city,street,apartment_number
 97526,Sanyang,53 Maple Wood Drive,13
 66764,Sheregesh,9 Russell Street,11
 74090,Dagang,783 Fallview Hill,6
-714,Linëvo,2840 Upham Alley,6
+00714,Linëvo,2840 Upham Alley,6
 98820,Bonavista,87 Reinke Crossing,3
 19374,Dolavón,160 Myrtle Plaza,6
 17387,San José El Ídolo,0048 Havey Plaza,13
@@ -331,13 +331,13 @@ zip_code,city,street,apartment_number
 94561,Las Tejeras,54 Sundown Lane,13
 57467,Gakovo,5935 New Castle Drive,1
 49031,Dingle,4841 American Ash Court,4
-7257,Hamilton,5 Westerfield Court,4
-8449,Lantian,8 Pearson Park,5
+07257,Hamilton,5 Westerfield Court,4
+08449,Lantian,8 Pearson Park,5
 41460,Cential,67 Talmadge Hill,14
 83285,Shuangtang,916 Mayer Center,15
 38259,Mingyu,4 Ludington Lane,15
 75865,Zhangjia,74 Lakewood Gardens Place,9
-2661,Saint-Quentin-en-Yvelines,2 Dapin Circle,7
+02661,Saint-Quentin-en-Yvelines,2 Dapin Circle,7
 87511,Rîbniţa,18238 Browning Crossing,7
 93093,Stockholm,5030 Carey Alley,12
 40174,Ipoh,1504 Maywood Court,1
@@ -370,12 +370,12 @@ zip_code,city,street,apartment_number
 78980,Kendung Timur,00511 Kingsford Road,8
 10149,Babasakhib,11 Gulseth Court,1
 79199,El Rancho,887 Quincy Junction,5
-9166,Hecheng,6590 Westport Place,8
+09166,Hecheng,6590 Westport Place,8
 44461,Luleå,85 Dayton Center,13
-9327,Aţ Ţawāḩīn,8 Prairie Rose Point,4
+09327,Aţ Ţawāḩīn,8 Prairie Rose Point,4
 20449,Marne-la-Vallée,414 John Wall Street,1
 38708,Santa Ana,83 Rockefeller Place,8
-8846,Trbovlje,92 Coolidge Circle,2
+08846,Trbovlje,92 Coolidge Circle,2
 76357,Bethal,44 Memorial Avenue,6
 85328,Portela,92 Artisan Lane,9
 92839,Denver,87495 Kropf Drive,12
@@ -391,14 +391,14 @@ zip_code,city,street,apartment_number
 78640,San Ricardo,14 Green Ridge Lane,7
 99693,Irkliyevskaya,21 Grim Court,3
 93357,Örebro,308 Kedzie Hill,6
-3794,Błędów,8208 Anderson Avenue,10
+03794,Błędów,8208 Anderson Avenue,10
 38778,Tambaksari,29136 Scoville Road,2
 44968,Dingcheng,7 Cambridge Lane,5
 20415,Kastsyukovichy,766 Prairieview Way,8
 70857,Joaquín V. González,49 Morningstar Court,9
 48287,Qianzhou,298 Autumn Leaf Parkway,2
 15707,Bankim,28997 Canary Point,5
-5771,Gaoqiao,08 Crest Line Terrace,8
+05771,Gaoqiao,08 Crest Line Terrace,8
 80938,Buynichy,9 7th Court,4
 98893,Hondo Valle,5 Trailsway Lane,10
 24669,Charlotte,2 Crescent Oaks Park,10
@@ -453,7 +453,7 @@ zip_code,city,street,apartment_number
 28952,Liudu,5783 Aberg Pass,4
 62115,An Nāşirah,2054 Claremont Drive,15
 37817,Xiaojiezi,24199 Barby Place,4
-149,Rawaapu,96 Vidon Drive,12
+00149,Rawaapu,96 Vidon Drive,12
 72010,Changchun,332 Pennsylvania Alley,8
 78502,Digne-les-Bains,451 Sunbrook Circle,5
 11314,Oslo,4020 Meadow Vale Pass,12
@@ -492,8 +492,8 @@ zip_code,city,street,apartment_number
 88478,Montpellier,701 Moland Place,1
 37049,‘Amrān,04 Maywood Road,11
 47723,Taungdwingyi,94865 Manufacturers Center,12
-7252,Albania,32912 Di Loreto Hill,4
-5373,Hostěradice,8205 Butterfield Terrace,14
+07252,Albania,32912 Di Loreto Hill,4
+05373,Hostěradice,8205 Butterfield Terrace,14
 40668,Pärnu,3 Dakota Avenue,5
 14717,Laohugang,66536 Dovetail Hill,11
 82598,Shimen,75 Trailsway Center,15
@@ -549,7 +549,7 @@ zip_code,city,street,apartment_number
 94154,Maţarah,810 Fuller Drive,7
 41350,Văn Giang,283 Northridge Drive,3
 26881,Berezayka,9432 Sycamore Hill,13
-7349,Troitskaya,748 Golf View Parkway,3
+07349,Troitskaya,748 Golf View Parkway,3
 43009,Pochinok,384 Pawling Lane,14
 42319,Voorburg,7539 Havey Alley,11
 65414,Palagao Norte,4989 Ohio Place,5
@@ -561,13 +561,13 @@ zip_code,city,street,apartment_number
 88778,Tabango,63028 Hooker Point,14
 17477,Las Palmas,803 Carberry Lane,3
 11917,Mozi,1 Talmadge Trail,6
-1411,Wissous,86402 Scott Place,13
+01411,Wissous,86402 Scott Place,13
 98036,Zhongxinqiao,07104 Transport Plaza,4
 28335,Kiryandongo,1 Macpherson Street,1
-1664,Moyale,0 Shasta Lane,11
+01664,Moyale,0 Shasta Lane,11
 48656,Quilo-quilo,45533 Longview Alley,8
 98139,Landerneau,9744 Tomscot Street,5
-4890,Złotoryja,6 Heath Park,7
+04890,Złotoryja,6 Heath Park,7
 34246,Higetegera,47 Crowley Alley,9
 14558,Ichupampa,0181 Melvin Avenue,2
 75585,Garahan,8052 Tennyson Terrace,7
@@ -585,7 +585,7 @@ zip_code,city,street,apartment_number
 74435,Wat Bot,1 Bluestem Plaza,11
 41981,Maqia,2 Cordelia Lane,2
 26362,Chaguaní,53 Armistice Avenue,14
-2473,Aknīste,99 Fairfield Way,10
+02473,Aknīste,99 Fairfield Way,10
 94870,Devesa,7362 Twin Pines Pass,3
 85962,Dal’neye Konstantinovo,6126 David Crossing,8
 20868,Kostyantynivka,6 Badeau Street,5
@@ -610,7 +610,7 @@ zip_code,city,street,apartment_number
 49843,Lapu-Lapu City,2889 Delladonna Road,4
 26293,Beicang,0 Dennis Hill,2
 61502,Quintães,378 Red Cloud Lane,14
-9608,Urozhaynoye,87 Ilene Parkway,1
+09608,Urozhaynoye,87 Ilene Parkway,1
 44458,Goge,7 Kings Crossing,10
 71578,Shimodate,8 Hollow Ridge Pass,11
 91946,Sarnia,71 Dahle Park,8
@@ -632,8 +632,8 @@ zip_code,city,street,apartment_number
 42601,San Pedro de Lloc,89375 Manley Terrace,5
 99653,Heba,0 Bartelt Park,15
 35609,Inderka,46943 Ridgeway Place,15
-6278,Linan,7 Eliot Point,12
-750,Zhongcun,798 Sloan Road,12
+06278,Linan,7 Eliot Point,12
+00750,Zhongcun,798 Sloan Road,12
 34201,Liquica,4138 Brickson Park Alley,8
 35011,Tuochuan,5140 Scoville Alley,9
 19815,Subic,23 Luster Drive,6
@@ -645,25 +645,25 @@ zip_code,city,street,apartment_number
 64998,Eldoret,1284 Bartelt Court,4
 11375,Paris 04,2519 Bartelt Drive,10
 68021,Jinji,74 Utah Avenue,2
-1340,Dashuipo,75884 Fieldstone Place,13
+01340,Dashuipo,75884 Fieldstone Place,13
 43819,Horka nad Moravou,09731 Fisk Junction,11
-1396,Antsohihy,46612 Toban Way,7
+01396,Antsohihy,46612 Toban Way,7
 89946,Būsh,6134 Amoth Drive,10
 51416,Pasarbaru,26 Hoepker Way,1
 46465,Yuanlin,4 Jay Point,14
 22073,Xianxiang,0 Kings Avenue,12
-6245,Notre-Dame-de-l'Île-Perrot,939 Hagan Road,14
+06245,Notre-Dame-de-l'Île-Perrot,939 Hagan Road,14
 17068,Bongouanou,3925 Comanche Road,11
 16470,Iwade,711 Mifflin Pass,1
 35913,Klevan’,12323 Larry Street,1
-7972,Moryń,015 International Terrace,3
+07972,Moryń,015 International Terrace,3
 65882,Shumerlya,59085 Buell Place,8
-2984,Jonquière,8754 Nelson Avenue,8
+02984,Jonquière,8754 Nelson Avenue,8
 87559,Qala i Naw,31 Lindbergh Way,2
 43212,Huangyan,978 Fallview Park,13
 83213,Yartsevo,791 Twin Pines Lane,10
 44882,Xinlong,93 Pine View Avenue,8
-50,Hullo,131 Thompson Place,8
+00050,Hullo,131 Thompson Place,8
 35719,Xiangtang,74 Superior Hill,13
 33775,Dranoc,351 Nova Junction,9
 97687,Sidonganti,3898 Warbler Way,2
@@ -684,7 +684,7 @@ zip_code,city,street,apartment_number
 84594,El Carmen,15953 Graceland Circle,8
 70169,Isulan,13 Straubel Center,4
 44747,Sokobanteng,30400 Tony Hill,15
-5127,Maştağa,9370 Butterfield Point,7
+05127,Maştağa,9370 Butterfield Point,7
 63233,Bartica,81761 Porter Avenue,8
 97078,Centre de Flacq,916 Sullivan Junction,6
 77042,Heka,9629 Golden Leaf Circle,11
@@ -695,7 +695,7 @@ zip_code,city,street,apartment_number
 95919,Iligan City,61 Lawn Park,5
 38165,Aitape,9108 Knutson Lane,15
 70670,Sosnovka,96 Maple Wood Drive,15
-4770,Cibodas,41988 Evergreen Junction,11
+04770,Cibodas,41988 Evergreen Junction,11
 79434,Arbaoua,0907 Kim Pass,6
 90045,Hanfeng,57 Coolidge Center,10
 16377,Dauphin,7 Porter Parkway,13
@@ -708,8 +708,8 @@ zip_code,city,street,apartment_number
 15252,Huancabamba,4462 Haas Circle,10
 13873,Pasadena,18837 Kedzie Center,11
 36732,Guandu,53549 Blue Bill Park Avenue,4
-9224,Forécariah,85 Monterey Way,4
-8594,Novi Pazar,828 Shelley Place,14
+09224,Forécariah,85 Monterey Way,4
+08594,Novi Pazar,828 Shelley Place,14
 54454,Salerno,890 Knutson Lane,13
 13044,Zall-Dardhë,1 Shelley Center,11
 97256,Caçapava,6 Dixon Terrace,13
@@ -738,7 +738,7 @@ zip_code,city,street,apartment_number
 65853,Wum,60673 Sage Lane,2
 77790,Torino,81174 Magdeline Hill,4
 96627,Chernyakhovsk,25087 Upham Park,7
-8741,Yacheng,43463 Loftsgordon Parkway,1
+08741,Yacheng,43463 Loftsgordon Parkway,1
 69866,Marseille,417 Gulseth Crossing,4
 11594,Hekou,75919 Hanson Street,13
 40758,Yuchi,87346 Milwaukee Park,10
@@ -746,7 +746,7 @@ zip_code,city,street,apartment_number
 14982,Gandu,35 Meadow Vale Terrace,14
 61792,Dayton,34184 Meadow Vale Street,6
 27942,Khalopyenichy,643 Buell Trail,10
-5878,Vityazevo,794 Stuart Hill,15
+05878,Vityazevo,794 Stuart Hill,15
 66626,Prelog,7 Summit Court,6
 55615,Yumaguzino,1 Talisman Court,5
 33699,Dhalie,59603 Stone Corner Terrace,9
@@ -763,7 +763,7 @@ zip_code,city,street,apartment_number
 29452,Stockholm,06534 Onsgard Place,10
 31967,Combita,787 Alpine Street,11
 53879,Xiamujiao,795 Browning Road,14
-5519,Kabac,60656 Marquette Avenue,2
+05519,Kabac,60656 Marquette Avenue,2
 60857,Zuhu,88357 Bowman Court,10
 88543,Jishan,5762 Dunning Parkway,6
 82803,Tafí del Valle,22265 Tony Plaza,9
@@ -807,12 +807,12 @@ zip_code,city,street,apartment_number
 58412,Drosiá,14 Texas Drive,3
 72228,Krosno Odrzańskie,9 Division Plaza,3
 24150,Kot Sultan,9317 Rieder Court,2
-6000,Berlin,307 Rusk Point,1
+06000,Berlin,307 Rusk Point,1
 32903,Burayevo,0685 Express Park,3
 90109,Xo’jayli Shahri,44427 Dixon Circle,7
 49324,Campos Gerais,8720 Golf View Lane,9
 43012,Duy Xuyên,066 Mendota Street,15
-4696,Mzuzu,1 Meadow Vale Circle,10
+04696,Mzuzu,1 Meadow Vale Circle,10
 79012,Mealhada,3236 Sunfield Junction,5
 69714,Manghit,5 Meadow Vale Avenue,9
 73038,Asen,035 Kinsman Crossing,14
@@ -831,12 +831,12 @@ zip_code,city,street,apartment_number
 61175,Ngori,2095 Roth Plaza,3
 48193,Puerto Berrío,059 Jay Plaza,11
 58665,Kawit,02 Birchwood Circle,3
-9446,Ad Darbāsīyah,366 Cordelia Pass,1
+09446,Ad Darbāsīyah,366 Cordelia Pass,1
 35521,Morcolla,5056 Homewood Park,8
 48466,Phichit,15306 Scofield Court,2
 39923,Sagbayan,85 Lerdahl Terrace,13
 63041,Suay,32908 Victoria Street,6
-369,Ganné Tiqwa,88 Pennsylvania Center,6
+00369,Ganné Tiqwa,88 Pennsylvania Center,6
 19602,Amizmiz,56456 Lakeland Pass,3
 92982,Yŏng-dong,8 Calypso Trail,15
 12858,Arapiraca,742 American Plaza,6
@@ -859,7 +859,7 @@ zip_code,city,street,apartment_number
 64980,Aoufous,22 Donald Terrace,3
 91597,Yanchi,7522 Oak Valley Road,2
 69389,Pinggirsari,2114 Hanson Parkway,10
-4445,San Pedro Masahuat,6181 Fallview Alley,1
+04445,San Pedro Masahuat,6181 Fallview Alley,1
 30769,Brandýs nad Labem-Stará Boleslav,39185 Dexter Street,6
 92029,Bystré,6890 Lindbergh Center,6
 38478,San Francisco,17 Buhler Junction,7
@@ -882,10 +882,10 @@ zip_code,city,street,apartment_number
 29493,Iturama,3 Eliot Street,6
 84597,Mompós,7 Burning Wood Place,15
 78614,Rudna Mała,852 Carey Park,6
-2258,Sindangsari,15232 Donald Center,7
+02258,Sindangsari,15232 Donald Center,7
 54760,Bin’an,88 Onsgard Crossing,14
 74309,Vila Maior,6 Pleasure Alley,9
-3383,Mao’ershan,548 8th Junction,14
+03383,Mao’ershan,548 8th Junction,14
 50854,Skelleftehamn,5 Sundown Circle,12
 55234,Ramos West,0 Ronald Regan Court,4
 38625,Grebenskaya,4 Morrow Court,3
@@ -895,20 +895,20 @@ zip_code,city,street,apartment_number
 85472,Duncans,66 Schmedeman Plaza,14
 31151,Huangjiazhai,6 Rockefeller Drive,1
 51255,Huambo,3 Cambridge Circle,7
-7899,Karobokan,4947 Merrick Park,7
+07899,Karobokan,4947 Merrick Park,7
 66233,Banjar Medura,759 Dorton Circle,10
-3269,Hinthada,60 Saint Paul Pass,5
+03269,Hinthada,60 Saint Paul Pass,5
 26018,Uvarovo,7 Acker Parkway,5
 16265,Klippan,6282 Springview Junction,4
 37228,Sancti Spíritus,23 Division Circle,11
 18632,Viking,57144 Harbort Place,9
 63126,Torbat-e Jām,8 Waubesa Trail,14
 22457,Apeldoorn,30 Mayer Lane,3
-7728,Barr,6172 Cardinal Crossing,13
-9613,Sukamaju,0 Bartelt Lane,1
+07728,Barr,6172 Cardinal Crossing,13
+09613,Sukamaju,0 Bartelt Lane,1
 78151,Cergy-Pontoise,14 Macpherson Terrace,14
 50519,Manolo Fortich,984 Blackbird Parkway,9
-2819,Miaoqian,5 Sycamore Way,12
+02819,Miaoqian,5 Sycamore Way,12
 51470,Troyits’ke,3955 Eliot Place,2
 25928,Tsagaan-Olom,49 Springview Circle,15
 72202,Alangilanan,87 Butterfield Parkway,7
@@ -919,16 +919,16 @@ zip_code,city,street,apartment_number
 19297,Mardakyany,3 Havey Center,4
 21194,Bent Jbaïl,323 Nelson Place,15
 47272,Wlingi,7004 Dawn Park,15
-8717,Liyang,685 Haas Junction,10
-6526,Lyski,1908 Fisk Lane,1
-6389,Francisco Villa,99856 Sutteridge Trail,5
+08717,Liyang,685 Haas Junction,10
+06526,Lyski,1908 Fisk Lane,1
+06389,Francisco Villa,99856 Sutteridge Trail,5
 20722,Tovačov,8929 Vernon Trail,4
 56842,Zhengwan,821 Northview Junction,2
 64301,Gore,3802 Lien Road,5
 40610,Mudian,286 Barby Trail,15
 89271,Gaozhou,19291 Cherokee Avenue,2
 71706,Koa,923 Amoth Plaza,4
-2628,Ibarra,5 Prentice Center,13
+02628,Ibarra,5 Prentice Center,13
 22615,Banjar Peguyangan,1353 Cascade Center,15
 40725,Sabang,8933 Dottie Hill,10
 38550,Kolindrós,65825 Algoma Terrace,14
@@ -940,7 +940,7 @@ zip_code,city,street,apartment_number
 88116,San Fernando,9 Transport Parkway,5
 59941,Ciudad Choluteca,1 Lake View Parkway,3
 39102,Velika,4160 Dexter Lane,5
-2276,Dabao,628 Florence Lane,11
+02276,Dabao,628 Florence Lane,11
 65436,Shufeng,6 Union Crossing,15
 44192,Smolenskaya,94 Express Place,9
 54405,São Joaquim da Barra,34594 Dawn Terrace,3
@@ -957,7 +957,7 @@ zip_code,city,street,apartment_number
 87224,Bantarsari Kulon,2 Green Ridge Junction,9
 53235,Pesagen,55 Oak Valley Terrace,3
 99198,Sukadana,983 Granby Junction,11
-8995,Chengyang,2603 Grover Road,6
+08995,Chengyang,2603 Grover Road,6
 75504,Butou,422 Hoepker Plaza,7
 44772,Knoxville,41 Grasskamp Court,14
 32725,Aksu,17549 Schmedeman Point,2
@@ -990,8 +990,8 @@ zip_code,city,street,apartment_number
 91042,Askiz,7 Holy Cross Lane,14
 97944,Bagarmossen,68493 Daystar Park,8
 53704,Ar Ruḩaybah,295 Drewry Road,11
-7360,Beausejour,7 Briar Crest Avenue,13
-6025,Kebonkaret,85966 Grasskamp Road,8
+07360,Beausejour,7 Briar Crest Avenue,13
+06025,Kebonkaret,85966 Grasskamp Road,8
 41921,Freiria,2 Melby Park,10
 20832,Ponce,7 Tennessee Way,10
 36092,Oslo,650 Carioca Drive,15
@@ -1025,10 +1025,10 @@ zip_code,city,street,apartment_number
 32618,Donskoy,3724 Truax Junction,3
 27626,Markaz Mudhaykirah,64 Thierer Hill,6
 86095,Kiryū,1550 Mesta Drive,1
-4332,Taoyuan,420 Clemons Circle,15
-6282,Toledo,195 Fairfield Center,13
+04332,Taoyuan,420 Clemons Circle,15
+06282,Toledo,195 Fairfield Center,13
 74383,Lago da Pedra,083 Blue Bill Park Plaza,13
-957,Fushë-Muhurr,9 Loomis Court,2
+00957,Fushë-Muhurr,9 Loomis Court,2
 28537,Belén de Umbría,46 Nancy Center,2
 26324,Otterburn Park,1 Ramsey Pass,11
 55157,Rizal,836 Columbus Crossing,2
@@ -1079,13 +1079,13 @@ zip_code,city,street,apartment_number
 76607,Tuapse,63533 Eliot Circle,4
 44247,Knjazevac,11 Elgar Place,8
 41134,Kurów,18113 Merry Terrace,8
-5610,Baoquanshan,46604 Paget Center,7
+05610,Baoquanshan,46604 Paget Center,7
 62265,Gifu-shi,2 Sachs Parkway,1
 48230,Futian,577 Hazelcrest Drive,7
-9973,Kamyzyak,2 Ramsey Park,15
+09973,Kamyzyak,2 Ramsey Park,15
 43324,Fundación,8033 Iowa Trail,5
 71587,Metz,9 Melvin Park,14
-5330,Jaen,3956 Orin Court,9
+05330,Jaen,3956 Orin Court,9
 42136,Batulenger Barat,3 Weeping Birch Parkway,11
 24407,Zhizhong,8692 Talisman Trail,8
 13901,Hopetown,009 Del Mar Circle,13
@@ -1100,11 +1100,11 @@ zip_code,city,street,apartment_number
 19258,Rikitgaib,5 Superior Point,7
 72685,Jingxin,26 Lindbergh Terrace,11
 88148,Boketu,012 Forster Terrace,7
-8456,Pashiya,72 American Center,11
+08456,Pashiya,72 American Center,11
 17466,Tantu,600 Shopko Crossing,1
 82953,Bajiao,64114 Summit Drive,15
 53135,Kembang,5 Londonderry Plaza,1
-9099,Kogota,00200 Shasta Parkway,14
+09099,Kogota,00200 Shasta Parkway,14
 88400,Chapelton,90 Mayer Crossing,14
 35399,Lyaskelya,64509 Dwight Alley,4
 30536,Valbo,73614 Buena Vista Trail,4
@@ -1115,38 +1115,38 @@ zip_code,city,street,apartment_number
 73442,Carpentras,8539 Monument Center,2
 65165,Bromma,53 Hoepker Place,8
 53948,Lafayette,60064 Fallview Terrace,14
-6847,Fresno,6 Portage Lane,15
+06847,Fresno,6 Portage Lane,15
 86328,Werota,6 Cascade Road,9
 20412,Guachetá,198 Johnson Point,1
-7496,Shiroi,2 Fordem Junction,13
+07496,Shiroi,2 Fordem Junction,13
 22541,Vermil,90826 Grim Junction,3
 88053,Hrazdan,1 Vahlen Drive,12
 35319,San Isidro de Lules,9332 Northfield Drive,3
 77586,Khvānsār,4 Goodland Terrace,5
 91920,Donetsk,214 Crowley Terrace,11
 86261,Gangtun,87 Calypso Crossing,9
-5096,Santo Anastácio,43 Eagan Crossing,1
+05096,Santo Anastácio,43 Eagan Crossing,1
 53980,Gedera,29707 Autumn Leaf Road,14
 68700,Shataping,093 Myrtle Street,3
 95761,Sindangheula,32 Moulton Drive,13
 61775,Hechuan,85 East Pass,4
-9535,Watubuku,48010 Roxbury Parkway,5
+09535,Watubuku,48010 Roxbury Parkway,5
 40198,Pameungpeuk,9029 Tennessee Avenue,5
 43003,Gununglarang,49 Morningstar Center,10
-1617,Wakefield,17 Barnett Lane,9
+01617,Wakefield,17 Barnett Lane,9
 77139,Santa Cruz,05270 Oak Valley Street,13
 17937,Särö,003 Fair Oaks Lane,8
 11538,Nové Město pod Smrkem,2 Schiller Crossing,14
 83937,Cabuyao,5 Drewry Parkway,2
 77616,Colesberg,56462 Graceland Junction,14
 98801,Liuzhuang,5 Atwood Junction,12
-7641,Sophia Antipolis,13412 Dorton Place,10
+07641,Sophia Antipolis,13412 Dorton Place,10
 50793,Morazán,288 Oak Valley Trail,11
 39853,Jiawu,9 7th Alley,9
 59635,Duozhu,8959 Corry Drive,11
-4170,Huangzhuang,8505 Union Place,10
+04170,Huangzhuang,8505 Union Place,10
 67272,Young America,2882 Daystar Street,13
-7657,Bistrica ob Sotli,643 Sundown Point,13
+07657,Bistrica ob Sotli,643 Sundown Point,13
 46138,Huangchi,991 Donald Park,11
 97780,Longzhong,661 Express Park,11
 58019,Chervonopartyzans’k,9816 Chive Lane,13
@@ -1168,7 +1168,7 @@ zip_code,city,street,apartment_number
 89437,Lancaster,737 Veith Junction,5
 51603,Tvøroyri,088 Swallow Crossing,14
 45656,Khatsyezhyna,95173 Almo Hill,14
-5511,Masuda,26 Bonner Street,13
+05511,Masuda,26 Bonner Street,13
 74876,Lebak,5 Mallory Drive,6
 19391,Irirum,6703 Mandrake Circle,8
 74571,Xiangdong,92101 Moland Crossing,12
@@ -1186,8 +1186,8 @@ zip_code,city,street,apartment_number
 98961,Budzów,55 Steensland Trail,6
 36662,Curepipe,22416 Warbler Trail,6
 10609,Temanjang,416 Myrtle Alley,8
-5032,Mabai,3767 Doe Crossing Alley,8
-5073,Cruz das Almas,0 Maywood Center,14
+05032,Mabai,3767 Doe Crossing Alley,8
+05073,Cruz das Almas,0 Maywood Center,14
 12808,Dasuk,183 Parkside Road,12
 87036,Oktyabr’skiy,0472 Division Hill,8
 87302,Qiryat Yam,48 Oriole Parkway,9
@@ -1201,29 +1201,29 @@ zip_code,city,street,apartment_number
 93498,Bin’an,38447 Clemons Center,5
 95759,Batad,0 Merry Trail,9
 20396,Tabivere,9 Gale Junction,3
-5009,Nara-shi,68 Scott Junction,1
+05009,Nara-shi,68 Scott Junction,1
 51256,Achiaman,3 Menomonie Alley,5
 15791,Roissy Charles-de-Gaulle,2170 Forster Road,3
-7721,Barakī Barak,94410 Beilfuss Alley,9
-8179,Bitanjuan,1 Acker Pass,14
+07721,Barakī Barak,94410 Beilfuss Alley,9
+08179,Bitanjuan,1 Acker Pass,14
 63847,La Palma,35 Porter Road,2
 83284,Cai Doi Vam,11 Troy Way,2
 53140,Sailaitang,9919 Sutherland Crossing,3
 97969,Maofan,6019 Holmberg Parkway,4
-8187,Jianggao,4659 Clarendon Avenue,6
-8668,Severnoye,3621 Lien Pass,8
+08187,Jianggao,4659 Clarendon Avenue,6
+08668,Severnoye,3621 Lien Pass,8
 16692,Granja do Tedo,157 Farmco Street,9
-387,Barrosa,863 Dixon Lane,14
+00387,Barrosa,863 Dixon Lane,14
 15554,Pokachi,9409 Dixon Plaza,13
 38619,Conqueiros,823 Glendale Place,3
 11716,Reutov,7 Springs Terrace,3
 14466,Otok,5251 Bay Parkway,2
-4396,Hveragerði,5 Claremont Circle,10
+04396,Hveragerði,5 Claremont Circle,10
 58524,Wiesbaden,3327 Morning Trail,10
 50702,Dumbéa,4736 Brickson Park Park,8
 51296,Gaotang,7 Maywood Circle,12
 53059,Mingyu,3 Katie Avenue,5
-785,Nueva Loja,989 Spohn Park,5
+00785,Nueva Loja,989 Spohn Park,5
 91064,Jovellar,8014 Sycamore Point,1
 60234,Tiandeng,668 Twin Pines Parkway,5
 66648,Ivanteyevka,88124 Melvin Terrace,14
@@ -1246,7 +1246,7 @@ zip_code,city,street,apartment_number
 65340,Voznesenskaya,885 Cascade Drive,1
 63108,Esperança,72526 Spenser Lane,9
 58737,Longford,9502 Sunbrook Hill,1
-2898,Middelburg,59808 Colorado Pass,8
+02898,Middelburg,59808 Colorado Pass,8
 15158,Sambirata,221 Glendale Center,5
 39864,Brovary,841 Dixon Road,1
 11336,Ganjun,4660 Arrowood Pass,1
@@ -1268,8 +1268,8 @@ zip_code,city,street,apartment_number
 48799,Kovel’,25 Fallview Way,8
 38772,Karlskrona,16 Merry Hill,10
 46052,Sabirabad,2 Utah Parkway,14
-7618,Koshki,7 Manley Hill,15
-4425,Aucallama,05 Elmside Lane,12
+07618,Koshki,7 Manley Hill,15
+04425,Aucallama,05 Elmside Lane,12
 59684,Zagoryanskiy,2 Eastlawn Place,15
 48165,Adelaide,2656 Anzinger Parkway,3
 29300,Honggang,4103 Aberg Place,8
@@ -1296,13 +1296,13 @@ zip_code,city,street,apartment_number
 91453,Xinxu,5 Colorado Park,11
 18206,San Isidro,535 Michigan Terrace,6
 59243,Barwałd Górny,5523 Artisan Point,15
-1364,Mertert,809 Northland Point,4
+01364,Mertert,809 Northland Point,4
 65651,Sirte,7 Trailsway Alley,14
-7328,Hatava,76 Elgar Circle,12
+07328,Hatava,76 Elgar Circle,12
 17615,Strawczyn,7594 Grover Hill,1
 54778,Bolderaja,43796 Manley Drive,5
 71127,Pudasjärvi,327 Ilene Street,14
-3080,Psevdás,5518 Hooker Alley,9
+03080,Psevdás,5518 Hooker Alley,9
 79856,Čoka,747 Westridge Parkway,10
 17408,Tomé Açu,23194 Riverside Center,7
 41176,Lucerna,34 Fair Oaks Park,11
@@ -1340,8 +1340,8 @@ zip_code,city,street,apartment_number
 92916,Puerto Cumarebo,0 Esch Trail,12
 88351,Mundão,30758 Melody Circle,11
 46755,Jinshan,72 Mayfield Hill,4
-6845,Ning’er,57925 Westport Parkway,2
-9767,Peña,2550 4th Junction,15
+06845,Ning’er,57925 Westport Parkway,2
+09767,Peña,2550 4th Junction,15
 55411,Kathu,93885 Luster Circle,3
 28341,Sindong,5 Ludington Street,14
 61897,Biryukove,68398 Dexter Hill,10
@@ -1371,7 +1371,7 @@ zip_code,city,street,apartment_number
 54762,Uście Gorlickie,87 Hanover Way,15
 99136,Horred,5910 Trailsway Terrace,6
 84174,Jönköping,98 Summer Ridge Alley,7
-1782,Prao,8260 Bluestem Street,13
+01782,Prao,8260 Bluestem Street,13
 97562,Conde,9768 Leroy Hill,7
 93434,Ljubuški,19586 Pawling Road,14
 36170,Sanxi,043 Meadow Ridge Alley,1
@@ -1408,20 +1408,20 @@ zip_code,city,street,apartment_number
 87772,Nóvita,380 Forest Dale Way,8
 11119,Fontainebleau,101 Sullivan Road,14
 84211,Cotuí,6101 Glacier Hill Way,3
-3299,Maundai,8503 Troy Trail,8
-7446,Morcolla,40164 Messerschmidt Avenue,3
+03299,Maundai,8503 Troy Trail,8
+07446,Morcolla,40164 Messerschmidt Avenue,3
 33878,Jinsha,228 Jenifer Lane,8
 80485,Melaka,74283 Columbus Alley,11
 66563,Kepel,5645 Division Junction,3
-5113,Villeneuve-lès-Avignon,65268 Oak Alley,13
+05113,Villeneuve-lès-Avignon,65268 Oak Alley,13
 61536,Upper Hell's Gate,5 Melvin Crossing,14
 51132,Gachalá,14 Parkside Center,2
 63021,Cimadang,62 Erie Drive,7
 28395,Fuxing,6417 Cherokee Circle,3
 62205,Nicosia,72 Laurel Drive,1
 26859,Lunel,36 Blackbird Pass,4
-146,Rokytnice nad Jizerou,03 Pond Park,10
-9621,Keelung,35 Fieldstone Park,4
+00146,Rokytnice nad Jizerou,03 Pond Park,10
+09621,Keelung,35 Fieldstone Park,4
 83098,Wujia,3 Sunfield Terrace,8
 20386,Sobral,1532 Meadow Valley Parkway,5
 68522,Apengjiang,84865 Rockefeller Park,2
@@ -1447,7 +1447,7 @@ zip_code,city,street,apartment_number
 59875,Libuganon,9 Hudson Circle,13
 66057,Sekararum,3436 Dexter Crossing,1
 94632,Vel’sk,70820 High Crossing Avenue,14
-4476,Tanshan,7 Mayer Plaza,11
+04476,Tanshan,7 Mayer Plaza,11
 50994,Sarulla,79 Basil Center,13
 89290,Inari,134 2nd Junction,7
 37926,Berezna,259 Judy Park,8
@@ -1491,7 +1491,7 @@ zip_code,city,street,apartment_number
 69804,Kebon,48 Cardinal Plaza,8
 46240,Tian’an,7 Pepper Wood Circle,5
 35932,Machinga,42738 Sherman Way,3
-1983,Monte,63 Jenifer Avenue,8
+01983,Monte,63 Jenifer Avenue,8
 35086,Auriflama,879 Forster Junction,12
 81785,Kuala Terengganu,03634 Hoffman Terrace,2
 70138,Chengnan,66165 Mifflin Plaza,3
@@ -1499,12 +1499,12 @@ zip_code,city,street,apartment_number
 42585,Jianlong,746 Eastwood Point,11
 62663,Cipaku,85 Superior Circle,10
 46879,Stradbally,9845 Knutson Circle,10
-1260,Florida,084 Starling Court,5
+01260,Florida,084 Starling Court,5
 42522,Taliouine,0674 Grayhawk Park,13
 82340,Tall aḑ Ḑamān,88 Barnett Street,7
 35404,Dziergowice,9534 Chive Pass,1
 43897,Gaoguan,94921 Kim Pass,10
-946,Bajing,692 Amoth Center,4
+00946,Bajing,692 Amoth Center,4
 93217,Rammūn,8809 Main Park,1
 20935,Mizque,23 Cardinal Parkway,9
 62242,Río Gallegos,5 Haas Pass,12
@@ -1520,7 +1520,7 @@ zip_code,city,street,apartment_number
 87082,Złotniki,200 Morningstar Hill,2
 96025,Zhongxiang,8340 Service Parkway,4
 86871,Rincón,7461 Lake View Crossing,1
-6432,Bahāwalpur,4 Dixon Lane,8
+06432,Bahāwalpur,4 Dixon Lane,8
 29314,Wuma,36776 Norway Maple Parkway,14
 75989,Itápolis,1310 Harper Place,6
 75942,Shangqing,153 Schiller Plaza,13
@@ -1531,13 +1531,13 @@ zip_code,city,street,apartment_number
 15163,Turija,9 Onsgard Point,2
 39251,Bindang,76 Mitchell Center,1
 41152,Bislig,4 Corben Alley,11
-9153,Taposan,59 Brown Drive,3
+09153,Taposan,59 Brown Drive,3
 67494,Beijie,0 Stoughton Parkway,13
 81564,Varoška Rijeka,18 Sachs Plaza,9
-3061,Adzopé,3206 Warrior Alley,9
+03061,Adzopé,3206 Warrior Alley,9
 76655,Ryglice,68 Packers Lane,1
 12986,Ratoath,445 Dakota Circle,7
-5627,Ambato Boeny,695 Weeping Birch Trail,7
+05627,Ambato Boeny,695 Weeping Birch Trail,7
 52669,Daguyun,5175 Grayhawk Road,3
 72242,Ciudad Ojeda,5237 Butternut Crossing,2
 87020,Palmerston North,1 Towne Road,6
@@ -1576,7 +1576,7 @@ zip_code,city,street,apartment_number
 66838,Kamifukuoka,99410 John Wall Court,1
 11230,Luzon,7780 Lyons Place,11
 84860,Oslo,298 Delaware Street,1
-5528,Santa Justina,90719 6th Drive,15
+05528,Santa Justina,90719 6th Drive,15
 58670,Jayawangi,08 Old Gate Parkway,8
 42967,Sirāhā,8 Summerview Road,15
 38591,Gawanan,1322 Beilfuss Avenue,6
@@ -1586,15 +1586,15 @@ zip_code,city,street,apartment_number
 83026,São Domingos de Rana,1410 Hazelcrest Avenue,1
 97671,Želetava,5 Canary Plaza,5
 44487,Jacupiranga,3754 Spaight Street,11
-9860,Borzna,59 Melody Alley,11
+09860,Borzna,59 Melody Alley,11
 47575,Pompéu,3 Northwestern Plaza,2
 40843,Yidian,7237 Oneill Crossing,9
 29331,Tahilt,811 Talisman Street,3
-2435,Queluz,40105 Kingsford Hill,2
+02435,Queluz,40105 Kingsford Hill,2
 35977,Lagayan,24 Gerald Drive,7
 43297,Lazarevskoye,1807 Sutherland Point,15
 73051,Tarnawatka,3288 Mariners Cove Junction,2
-3840,Waitakere,589 Katie Avenue,11
+03840,Waitakere,589 Katie Avenue,11
 80963,Firmat,28855 Pine View Trail,14
 72981,Höshigiyn-Ar,0913 Butterfield Court,11
 47120,El Paso,001 Superior Plaza,9

@@ -14,6 +14,8 @@
 - [Phase 2 - Queries](#phase-2---queries)
     - [Select Queries](#select-queries)
     - [Delete Queries](#delete-queries)
+    - [Update Queries](#update-queries)
+    - [Constraint Queries](#constraints)
 
 ---
 
@@ -186,3 +188,15 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ###### After Delete
     ![Delete Query 3](Phase2/images/after-delete3.png)
     ###### נמחקו 390 תרופות בשאילתה זו
+
+
+
+
+#### Update Queries
+📁 [The Update Queries File](Phase2/updateQueries.sql)
+
+
+### Constraints
+📁 [The Constraint File](Phase2/constraints.sql)
+### הסבר השאילתות:
+
