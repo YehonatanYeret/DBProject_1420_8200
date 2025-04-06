@@ -16,6 +16,7 @@
     - [Delete Queries](#delete-queries)
     - [Update Queries](#update-queries)
     - [Constraint Queries](#constraints)
+    - [Backup and Restore](#backup-and-restore)
 
 ---
 
@@ -109,7 +110,7 @@ To generate and insert realistic data, three different methods were used:
 
 Database backups are stored with timestamps to ensure data safety and recovery when needed.
 
-📂 [Go to Backup Directory](Phase1/Backup)
+📂 [Go to Backup Directory](Backup)
 
 #### Backup Process
 
@@ -374,6 +375,22 @@ ADD CONSTRAINT chk_medication_code_format CHECK (medication_code ~ '^[A-Za-z0-9\
 ```
 קוד תרופה חייב להיות בפורמט חוקי (אלפאנומרי עם מקפים).
 ![insert error](Phase2/images/constraint10.png)
+
+---
+
+### Backup and Restore
+
+Database backups are stored with timestamps to ensure data safety and recovery when needed.
+
+📂 [Go to Backup Directory](Backup)
+
+#### Backup Process
+
+![Backup Process](Phase2/images/backup.png)
+
+#### Restore Process
+
+![Backup Process](Phase2/images/restore.jpg)
 
 ---
 
