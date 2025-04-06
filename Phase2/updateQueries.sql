@@ -17,7 +17,8 @@ WHERE medication_code IN (
     HAVING COUNT(*) > 20
 );
 
--- Update the number of beds in departments with more than 50% of nurses on night shifts
+-- Update the number of beds in departments when the number of night shift nurses
+-- is more than half of the total number of beds in that department
 UPDATE department
 SET number_of_beds = number_of_beds * 1.5
 WHERE department_id IN (

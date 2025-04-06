@@ -195,7 +195,34 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 #### Update Queries
 📁 [The Update Queries File](Phase2/updateQueries.sql)
 
+### הסבר השאילתות:
+
+
+1. עדכנו את השכר של החוקרים עם מעל 300 ציטוטים ב5%.
+    ###### Before Update
+    ![Update Query 1](Phase2/images/before-update1.png)
+    ###### After Update
+    ![Update Query 1](Phase2/images/after-update1.png)
+
 ---
+
+2. עדכנו את מחיר התרופות של תרופות שהיו בשימוש במעל 20 טיפולים שונים ב5%.
+    ###### Before Update
+    ![Update Query 2](Phase2/images/before-update2.png)
+    ###### After Update
+    ![Update Query 2](Phase2/images/after-update2.png)
+
+---
+
+3. עדכנו את מספר המיטות במחלקות שיש בהן פחות מחצי מיטות מאשר אחיות במשמרת לילה להיות בעוד 50% מיטות.
+    ###### Before Update
+    ![Update Query 3](Phase2/images/before-update3.png)
+    ###### After Update
+    ![Update Query 3](Phase2/images/after-update3.png)
+
+
+---
+
 
 ### Constraints
 📁 [The Constraint File](Phase2/constraints.sql)
