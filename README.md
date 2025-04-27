@@ -428,7 +428,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 
 #### Restore Process
 
-![Backup Process](Phase2/images/restore.jpg)
+![Backup Process](Phase2/images/restore.png)
 
 ---
 
