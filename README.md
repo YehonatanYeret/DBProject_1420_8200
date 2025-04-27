@@ -15,6 +15,7 @@
     - [Select Queries](#select-queries)
     - [Delete Queries](#delete-queries)
     - [Update Queries](#update-queries)
+    - [Rollback And Commit](#rollback-and-commit)
     - [Constraint Queries](#constraints)
     - [Backup and Restore](#backup-and-restore)
 
@@ -223,6 +224,43 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 
 
 ---
+
+
+### Rollback And Commit
+📁 [The Rollback and Commit File](Phase2/rollbackCommit.sql)
+
+### הסבר השאילתות:
+1. הוספת אדם חדש למערכת ואחר כך ביצוע חזרה לאחור
+
+    ### בעזרת הפקודה הבאה נבדוק את השינוי בבסיס הנתונים לאחר כל פקודה:
+    ```sql
+    SELECT *
+    FROM person
+    WHERE id_number = 1111111;
+    ``` 
+    
+    ###### Before Commit
+    ![Rollback Query 1](Phase2/images/before-commit1.png)
+    ###### After Commit
+    ![Rollback Query 1](Phase2/images/after-commit1.png)
+    ###### After Rollback
+    ![Rollback Query 1](Phase2/images/after-rollback.png)
+
+2. הוספת אדם חדש למערכת ואחר כך שמירת השינויים במערכת
+
+    ### בעזרת הפקודה הבאה נבדוק את השינוי בבסיס הנתונים לאחר כל פקודה:
+    ```sql
+    SELECT *
+    FROM person
+    WHERE id_number = 2222222;
+    ``` 
+    
+    ###### Before Commit
+    ![Rollback Query 2](Phase2/images/before-commit2.png)
+    ###### After Commit
+    ![Rollback Query 2](Phase2/images/after-commit2.png)
+    ###### After Second Commit
+    ![Rollback Query 2](Phase2/images/after-second-commit2.png)
 
 
 ### Constraints
