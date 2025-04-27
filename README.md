@@ -241,7 +241,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     
     ###### Before Commit
     ![Rollback Query 1](Phase2/images/before-commit1.png)
-    ###### After Commit
+    ###### After Commit and Insert
     ![Rollback Query 1](Phase2/images/after-commit1.png)
     ###### After Rollback
     ![Rollback Query 1](Phase2/images/after-rollback.png)
@@ -257,9 +257,9 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     
     ###### Before Commit
     ![Rollback Query 2](Phase2/images/before-commit2.png)
-    ###### After Commit
+    ###### After Commit and Insert
     ![Rollback Query 2](Phase2/images/after-commit2.png)
-    ###### After Second Commit
+    ###### After Second Commit (to save changes)
     ![Rollback Query 2](Phase2/images/after-second-commit2.png)
 
 
