@@ -24,18 +24,19 @@ COMMIT;
 
 SELECT *
 FROM person
-WHERE id_number = '1111111';
+WHERE id_number = '2222222';
 
 INSERT INTO person (id_number, first_name, last_name, phone_number, address_zip_code)
-VALUES ('1111111', 'Yehonatan', 'Yeret', '123-456-789', '59487');
+VALUES ('2222222', 'Yehonatan', 'Yeret', '123-456-789', '59487');
 
 SELECT *
 FROM person
-WHERE id_number = '1111111';
+WHERE id_number = '2222222';
 
 COMMIT;
 
 SELECT *
 FROM person
-WHERE id_number = '1111111';
+WHERE id_number = '2222222';
+
 
