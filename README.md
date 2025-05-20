@@ -543,9 +543,10 @@ The integration creates a complete medical facility management system where:
 - Staff permissions ensure proper access control to sensitive areas
 - Supply chains and logistics are integrated with patient care systems
 
-📁 [Views for Integrated Data](Phase3/Views.sql)
 
 #### Database Views
+The integration process also involved creating views to simplify data access and reporting. The following views were created:
+📁 [Views for Integrated Data](Phase3/Views.sql)
 
 ##### View 1: Logistic_Worker_Access
 **Description**: Displays access permissions of logistics workers to different warehouses, showing worker details, warehouse information, and access level.
