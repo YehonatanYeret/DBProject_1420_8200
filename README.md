@@ -438,8 +438,214 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 ## Phase 3 - integrate with other Databases
 ### Integration with other databases
 📁 [The Integration File](Phase3/Integrate.sql)
-### הסבר:
 
+#### Integration Diagrams
+The integration process involved merging our database with an external database ("Medicines") to enhance functionality and data management. The following diagrams illustrate the merged structure:
+before integration we made reverse engineering for the external database and created a new ERD and DSD for it.
+### Medicines ERD 
+![Medicines ERD](Phase3/images/second_ERD.png)
 
+### Medicines DSD
+![Medicines DSD](Phase3/images/second_DSD.png)
 
+Then we merged the two databases into one, creating a new ERD and DSD that reflects the combined structure.
 
+### Merged ERD
+![Merged ERD](Phase3/images/merged_ERD.png)
+
+### Merged DSD
+![Merged DSD](Phase3/images/merged_DSD.png)
+
+#### Integration Process and Commands
+
+To integrate the external database ("Medicines") with our database, we performed the following steps:
+
+1. **Creating a Remote Connection with postgres_fdw**:
+   ```sql
+   CREATE EXTENSION IF NOT EXISTS postgres_fdw;
+   CREATE SERVER other_db FOREIGN DATA WRAPPER postgres_fdw 
+     OPTIONS (host 'localhost', port '5432', dbname 'Medicines');
+   CREATE USER MAPPING FOR current_user SERVER other_db 
+     OPTIONS (user 'yehonatan', password '12345678');
+   IMPORT FOREIGN SCHEMA public FROM SERVER other_db INTO foreign_schema;
+   ```
+   These commands allow direct access to external data without unnecessary duplication.
+
+2. **Extending Existing Tables**:
+   ```sql
+   ALTER TABLE Department ADD COLUMN Name VARCHAR(100);
+   ALTER TABLE Medication ADD COLUMN Shelf_life INT;
+   ```
+   We added new columns to existing tables to enrich the data and enable advanced analysis.
+
+3. **Creating Integrated Tables**:
+   ```sql
+   CREATE TABLE Orders (
+     order_id SERIAL PRIMARY KEY,
+     Department_number INT REFERENCES Department(department_number),
+     order_date DATE
+   );
+   
+   CREATE TABLE Drug_order_item (
+     item_id SERIAL PRIMARY KEY,
+     order_id INT REFERENCES Orders(order_id) ON DELETE CASCADE,
+     medication_id INT REFERENCES Medication(medication_id),
+     quantity INT
+   );
+   ```
+   We created linking tables that combine data from different sources.
+
+4. **Combining Data Between Sources**:
+   ```sql
+   INSERT INTO Orders (order_id, Department_number, order_date)
+   SELECT o.order_id, d.department_number, o.order_date
+   FROM foreign_schema."Order" o
+   JOIN Department d ON ...;
+   ```
+   We transferred data between sources while adjusting the keys and logical relationships.
+
+#### Integration Strategy
+
+Our integration approach focused on connecting our medical database with an external medicine management system ("Medicines" database) to create a complete healthcare management solution:
+
+1. **Foreign Data Connection:**
+   - Used `postgres_fdw` to seamlessly connect to the external database
+   - Imported external schema into a dedicated `foreign_schema` to prevent name collisions
+
+2. **Database Enhancements:**
+   - Added new columns to existing tables (Department, Medication) for better data management
+   - Created relationships between local and external tables with proper foreign key constraints
+
+3. **Data Integration Techniques:**
+   - Used `ROW_NUMBER()` for matching records lacking direct keys
+   - Applied normalization principles for medical supplies and equipment
+   - Maintained referential integrity with `ON DELETE CASCADE` settings
+
+4. **New Functional Areas:**
+   - Warehouse management for medical supplies and equipment
+   - Order processing system for medications and equipment
+   - Inventory tracking with proper stock management
+   - Staff access control for logistics operations
+
+#### Integration Highlights
+
+The integration creates a complete medical facility management system where:
+
+- Medical departments can track and order supplies directly
+- Inventory levels are maintained and monitored across warehouses
+- Staff permissions ensure proper access control to sensitive areas
+- Supply chains and logistics are integrated with patient care systems
+
+📁 [Views for Integrated Data](Phase3/Views.sql)
+
+#### Database Views
+
+##### View 1: Logistic_Worker_Access
+**Description**: Displays access permissions of logistics workers to different warehouses, showing worker details, warehouse information, and access level.
+
+![View 1 Results](Phase3/images/view1.png)
+
+**View Creation:**
+```sql
+CREATE VIEW Logistic_Worker_Access AS
+SELECT
+    p.ID_number,
+    CONCAT(p.First_name, ' ', p.Last_name) AS Full_Name,
+    w.Warehouse_Id,
+    w.Name AS Warehouse_Name,
+    w.Active_hours,
+    ha.Level
+FROM
+    Person p
+    JOIN Logistic_worker lw ON p.ID_number = lw.ID_number
+    JOIN Has_access ha ON lw.ID_number = ha.ID_number
+    JOIN Warehouse w ON ha.Warehouse_Id = w.Warehouse_Id;
+```
+
+**Query 1: Workers with Full Access (Level 5)**
+```sql
+SELECT *
+FROM Logistic_Worker_Access
+WHERE Level = 5;
+```
+**Query Description**: Identifies all logistics workers with highest level permissions (level 5), which grants full access to warehouse operations.
+
+**Output**: Returns personal details of workers with full access privileges, including their ID, name, assigned warehouse, and operating hours.
+
+![View 1 query 1 Results](Phase3/images/query1-1.png)
+
+**Query 2: Worker Count by Warehouse**
+```sql
+SELECT
+    Warehouse_Name,
+    COUNT(DISTINCT ID_number) AS Num_Workers
+FROM Logistic_Worker_Access
+GROUP BY Warehouse_Name;
+```
+**Query Description**: Provides a count of staff assigned to each warehouse, helping identify staffing levels across different storage facilities.
+
+**Output**: Lists each warehouse name along with the total number of unique workers who have access to it.
+
+![View 1 query 2 Results](Phase3/images/query1-2.png)
+
+##### View 2: Treatments_By_Doctor
+**Description**: Shows treatment details connecting patients with their attending doctors, including dates and personal information.
+
+![View 2 Results](Phase3/images/view2.png)
+
+**View Creation:**
+```sql
+CREATE VIEW Treatments_By_Doctor AS
+SELECT
+    p_patient.ID_number AS Patient_ID,
+    p_patient.First_Name AS Patient_First_Name,
+    p_patient.Last_Name AS Patient_Last_Name,
+    t.Treatment_Date,
+    p_doctor.First_Name AS Doctor_First_Name,
+    p_doctor.Last_Name AS Doctor_Last_Name
+FROM
+    Treatment t
+JOIN Patient pat ON t.Patient_ID = pat.ID_number
+JOIN Person p_patient ON pat.ID_number = p_patient.ID_number
+JOIN Attending_doctor ad ON t.attending_doctor_id = ad.ID_number
+JOIN Person p_doctor ON ad.ID_number = p_doctor.ID_number;
+```
+
+**Query 1: Treatment Count by Doctor**
+```sql
+SELECT Doctor_First_Name, Doctor_Last_Name, COUNT(*) AS Treatment_Count
+FROM Treatments_By_Doctor
+GROUP BY Doctor_First_Name, Doctor_Last_Name
+ORDER BY Treatment_Count DESC;
+```
+**Query Description**: Analyzes doctor workload by counting the total number of treatments performed by each physician.
+
+**Output**: Returns a list of doctors sorted by highest treatment count, useful for evaluating workload distribution and productivity.
+
+![View 2 query 1 Results](Phase3/images/query2-1.png)
+
+**Query 2: Doctors with Multiple Unique Patients**
+```sql
+SELECT Doctor_First_Name, Doctor_Last_Name, COUNT(DISTINCT Patient_ID) AS Unique_Patients
+FROM Treatments_By_Doctor
+GROUP BY Doctor_First_Name, Doctor_Last_Name
+HAVING COUNT(DISTINCT Patient_ID) > 3;
+```
+**Query Description**: Identifies doctors who have treated more than three unique patients, indicating physicians with broader case variety.
+
+**Output**: Shows each qualifying doctor's name along with their count of unique patients, useful for analyzing patient distribution.
+
+![View 2 query 2 Results](Phase3/images/query2-2.png)
+
+### Backup and Restore
+
+Database backups include the integrated data structure to ensure complete recovery when needed.
+📂 [Go to Backup Directory](Backup)
+
+#### Backup Process
+
+![Backup Process](Phase3/images/backup.png)
+
+#### Restore Process
+
+![Backup Process](Phase3/images/restore.png)
