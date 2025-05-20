@@ -19,7 +19,14 @@
     - [Constraint Queries](#constraints)
     - [Backup and Restore](#backup-and-restore)
 - [Phase 3 - integrate with other Databases](#phase-3---integrate-with-other-databases)
-    - [Integration with other databases](#integration-with-other-databases)
+    - [Integration](#integrations)
+    - [Integration Diagrams](#integration-diagrams)
+    - [Integration Process and Commands](#integration-process-and-commands)
+    - [Integration Strategy](#integration-strategy)
+    - [Integration Highlights](#integration-highlights)
+    - [Database Views](#database-views)
+        - [View 1: Logistic_Worker_Access](#view-1-logistic_worker_access)
+        - [View 2: Treatments_By_Doctor](#view-2-treatments_by_doctor)
     - [Backup and Restore](#backup-and-restore)
 
 ---
@@ -436,7 +443,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 ---
 
 ## Phase 3 - integrate with other Databases
-### Integration with other databases
+### Integrations
 📁 [The Integration File](Phase3/Integrate.sql)
 
 #### Integration Diagrams
