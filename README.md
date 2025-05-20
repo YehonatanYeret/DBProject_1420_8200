@@ -18,6 +18,9 @@
     - [Rollback And Commit](#rollback-and-commit)
     - [Constraint Queries](#constraints)
     - [Backup and Restore](#backup-and-restore)
+- [Phase 3 - integrate with other Databases](#phase-3---integrate-with-other-databases)
+    - [Integration with other databases](#integration-with-other-databases)
+    - [Backup and Restore](#backup-and-restore)
 
 ---
 
@@ -431,6 +434,12 @@ Database backups are stored with timestamps to ensure data safety and recovery w
 ![Backup Process](Phase2/images/restore.png)
 
 ---
+
+## Phase 3 - integrate with other Databases
+### Integration with other databases
+📁 [The Integration File](Phase3/Integrate.sql)
+### הסבר:
+
 
 
 
