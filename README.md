@@ -10,14 +10,14 @@
     - [DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
     - [SQL Scripts](#sql-scripts)
     - [Data Insertion](#data-insertion)
-    - [Backup and Restore](#backup-and-restore)
+    - [Backup and Restore](#backup-and-restore-1)
 - [Phase 2 - Queries](#phase-2---queries)
     - [Select Queries](#select-queries)
     - [Delete Queries](#delete-queries)
     - [Update Queries](#update-queries)
     - [Rollback And Commit](#rollback-and-commit)
     - [Constraint Queries](#constraints)
-    - [Backup and Restore](#backup-and-restore)
+    - [Backup and Restore](#backup-and-restore-2)
 - [Phase 3 - integrate with other Databases](#phase-3---integrate-with-other-databases)
     - [Integration](#integrations)
     - [Integration Diagrams](#integration-diagrams)
@@ -27,7 +27,11 @@
     - [Database Views](#database-views)
         - [View 1: Logistic_Worker_Access](#view-1-logistic_worker_access)
         - [View 2: Treatments_By_Doctor](#view-2-treatments_by_doctor)
-    - [Backup and Restore](#backup-and-restore)
+    - [Backup and Restore](#backup-and-restore-3)
+- [Phase 4 - Programming](#phase-4---programming)
+    - [first program](#first-program)
+    - [second program](#second-program)
+    - [Backup and Restore](#backup-and-restore-4)
 
 ---
 
@@ -117,7 +121,7 @@ To generate and insert realistic data, three different methods were used:
 
 ---
 
-### Backup and Restore
+### Backup and Restore 1
 
 Database backups are stored with timestamps to ensure data safety and recovery when needed.
 
@@ -426,7 +430,7 @@ ADD CONSTRAINT chk_medication_code_format CHECK (medication_code ~ '^[A-Za-z0-9\
 
 ---
 
-### Backup and Restore
+### Backup and Restore 2
 
 Database backups are stored with timestamps to ensure data safety and recovery when needed.
 
@@ -645,7 +649,7 @@ HAVING COUNT(DISTINCT Patient_ID) > 3;
 
 ![View 2 query 2 Results](Phase3/images/query2-2.png)
 
-### Backup and Restore
+### Backup and Restore 3
 
 Database backups include the integrated data structure to ensure complete recovery when needed.
 📂 [Go to Backup Directory](Backup)
@@ -657,3 +661,56 @@ Database backups include the integrated data structure to ensure complete recove
 #### Restore Process
 
 ![Backup Process](Phase3/images/restore.png)
+
+
+---
+## Phase 4 - Programming
+
+we add a new column in medication named 'amount'
+in the [Alter table file](Phase4/AlterTable.sql) to store the amount of medication given in each treatment.
+```sql
+ALTER TABLE treatment_medication
+ADD amount int;
+
+UPDATE treatment_medication
+SET amount = 1;
+```
+
+### First Program
+📁 [The First Program File](Phase4/main1.sql)
+#### Description
+The script is used to add a shift for a staff member and assign a nurse to a department.
+
+Before running the first part, the shift table looks like this:
+![Before First Program](Phase4/images/main1.1-before.jpg)
+
+After running the first part, the shift table looks like this:
+![After First Program](Phase4/images/main1.1-after.jpg)
+
+The second part returns an exception:
+![Exception in First Program](Phase4/images/main1.2.jpg)
+
+### Second Program
+📁 [The Second Program File](Phase4/main2.sql)
+#### Description
+The script file is used to calculate doctor drug usage and update equipment stock.
+
+The first part returns the number of drugs used by each doctor:
+![First Part of Second Program](Phase4/images/main2.1.jpg)
+
+Before the second part, the equipment stock table looks like this:
+![Before Second Program](Phase4/images/main2.2-before.jpg)
+
+After the second part, the equipment stock table looks like this:
+![After Second Program](Phase4/images/main2.2-after.jpg)
+
+### Backup and Restore 4
+Database backups include the programming data structure to ensure complete recovery when needed.
+📂 [Go to Backup Directory](Backup)
+#### Backup Process
+![Backup Process](Phase4/images/backup.png)
+#### Restore Process
+![Backup Process](Phase4/images/restore.png)
+
+
+
