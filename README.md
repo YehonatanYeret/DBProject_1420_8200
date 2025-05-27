@@ -696,7 +696,10 @@ The second part returns an exception:
 The script file is used to calculate doctor drug usage and update equipment stock.
 
 The first part returns the number of drugs used by each doctor:
+
 ![First Part of Second Program](Phase4/images/main2.1.jpg)
+
+
 
 Before the second part, the equipment stock table looks like this:
 ![Before Second Program](Phase4/images/main2.2-before.jpg)
