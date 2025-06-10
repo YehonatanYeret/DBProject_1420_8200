@@ -780,18 +780,18 @@ Database backups include the programming data structure to ensure complete recov
    ![Login Screen](Phase5/images/screenshot-login.png)
 2. **Dashboard:**
    ![Dashboard Screen](Phase5/images/screenshot-dashboard.png)
-3. **Medications Managment Screen:**
-   ![Queries & Procedures Screen](Phase5/images/screenshot-medications.png)
 4. **Patients Management Screen:**
    ![Patients Management Screen](Phase5/images/screenshot-patients.png)
-5. **Departments/Medications Screen:**
-   ![Departments/Medications Screen](Phase5/images/screenshot-departments.png)
+3. **Medications Managment Screen:**
+   ![Medications Managment Screen](Phase5/images/screenshot-medications.png)
+5. **Departments Management Screen:**
+   ![Departments Management Screen](Phase5/images/screenshot-departments.png)
 
 
 ---
 
 For any further questions or explanations about any of the steps, feel free to contact the project authors.
-######Yehonatan Yeret && Maor Noy
+###### Yehonatan Yeret && Maor Noy
 
 
 
