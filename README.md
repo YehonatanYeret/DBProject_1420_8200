@@ -32,7 +32,7 @@
     - [first program](#first-program)
     - [second program](#second-program)
     - [Backup and Restore](#backup-and-restore-4)
-- [Phase 5 - Hospital Management Application (Frontend + Backend)]
+- [Phase 5 - Hospital Management Application](#Frontend-+-Backend)
     - [Running Instructions](#running-instructions)
     - [Tools & Technologies Used](#tools--technologies-used)
     - [File & Folder Structure](#file--folder-structure)
