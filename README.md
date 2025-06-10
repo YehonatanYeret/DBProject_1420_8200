@@ -723,7 +723,7 @@ Database backups include the programming data structure to ensure complete recov
 
 ---
 
-## Phase 5 -  Hospital Management Application
+## Phase 5 - Hospital Management Application
 
 ### Running Instructions
 
