@@ -32,6 +32,12 @@
     - [first program](#first-program)
     - [second program](#second-program)
     - [Backup and Restore](#backup-and-restore-4)
+- [Phase 5 - Hospital Management Application (Frontend + Backend)
+    - [Running Instructions](#running-instructions)
+    - [Tools & Technologies Used](#tools--technologies-used)
+    - [File & Folder Structure](#file--folder-structure)
+    - [Internal Documentation](#internal-documentation)
+    - [Screenshots (replace with actual screenshots)](#screenshots-replace-with-actual-screenshots)
 
 ---
 
@@ -714,6 +720,78 @@ Database backups include the programming data structure to ensure complete recov
 ![Backup Process](Phase4/images/backup.png)
 #### Restore Process
 ![Backup Process](Phase4/images/restore.png)
+
+---
+
+## Phase 5 - Hospital Management Application (Frontend + Backend)
+
+### Running Instructions
+
+1. **Start the Backend Server:**
+   - Navigate to `Phase5/backend` and run:
+     ```bash
+     npm install
+     npm run dev
+     ```
+   - The server will run on port 3001.
+
+2. **Start the Frontend (React App):**
+   - Navigate to `Phase5` (or `Phase5/frontend` if such a folder exists) and run:
+     ```bash
+     npm install
+     npm start
+     ```
+   - The app will be available at: http://localhost:3000
+
+3. **Login Credentials:**
+   - Username: `Yehonatan` Password: `12345678`
+   - Username: `Maor` Password: `12345678`
+
+### Tools & Technologies Used
+- **PostgreSQL** - Relational database
+- **Node.js + Express** - Backend server in JavaScript/TypeScript
+- **React + TypeScript** - Modern frontend UI
+- **Axios** - HTTP requests between frontend and backend
+- **TailwindCSS** - Modern, responsive styling
+- **pg** - PostgreSQL client for Node.js
+- **Other tools:** VSCode, PgAdmin, PowerShell
+
+### File & Folder Structure
+- `Phase5/backend` - Backend code (Node.js/Express)
+  - `src/routes` - Route files for each entity (patients, departments, medications, queries)
+- `Phase5/src/components` - React components for each main screen:
+  - `LoginPage.tsx` - Login screen
+  - `Dashboard.tsx` - Main dashboard
+  - `QueriesSection.tsx` - Queries & procedures screen
+  - `PatientsPage.tsx` - Patient management
+  - `DepartmentsPage.tsx` - Department management
+  - `MedicationsPage.tsx` - Medication management
+  - `Navigation.tsx` - Navigation menu
+  - `Modal.tsx` - General modals
+
+### Internal Documentation
+- Every file and component contains documentation and comments (JS/TS Doc, English and Hebrew where relevant)
+- Variable and function names are clear and descriptive
+- Each backend route is documented at the top of the file
+
+### Screenshots (replace with actual screenshots)
+
+1. **Login Screen:**
+   ![Login Screen](Phase5/images/screenshot-login.png)
+2. **Dashboard:**
+   ![Dashboard Screen](Phase5/images/screenshot-dashboard.png)
+3. **Queries & Procedures Screen:**
+   ![Queries & Procedures Screen](Phase5/images/screenshot-queries.png)
+4. **Patients Management Screen:**
+   ![Patients Management Screen](Phase5/images/screenshot-patients.png)
+5. **Departments/Medications Screen:**
+   ![Departments/Medications Screen](Phase5/images/screenshot-departments.png)
+
+> **Note:** Replace the images with actual screenshots after capturing the screens.
+
+---
+
+For any further questions or explanations about any of the steps, feel free to contact the project authors.
 
 
 
