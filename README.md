@@ -723,7 +723,7 @@ Database backups include the programming data structure to ensure complete recov
 
 ---
 
-## Phase 5 - Hospital Management Application (Frontend + Backend)
+## Phase 5 -  Hospital Management Application
 
 ### Running Instructions
 
@@ -736,12 +736,12 @@ Database backups include the programming data structure to ensure complete recov
    - The server will run on port 3001.
 
 2. **Start the Frontend (React App):**
-   - Navigate to `Phase5` (or `Phase5/frontend` if such a folder exists) and run:
+   - Navigate to `Phase5` and run:
      ```bash
      npm install
      npm start
      ```
-   - The app will be available at: http://localhost:3000
+   - The app will be available at: http://localhost:5173
 
 3. **Login Credentials:**
    - Username: `Yehonatan` Password: `12345678`
@@ -787,11 +787,11 @@ Database backups include the programming data structure to ensure complete recov
 5. **Departments/Medications Screen:**
    ![Departments/Medications Screen](Phase5/images/screenshot-departments.png)
 
-> **Note:** Replace the images with actual screenshots after capturing the screens.
 
 ---
 
 For any further questions or explanations about any of the steps, feel free to contact the project authors.
+######Yehonatan Yeret && Maor Noy
 
 
 
