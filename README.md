@@ -780,8 +780,8 @@ Database backups include the programming data structure to ensure complete recov
    ![Login Screen](Phase5/images/screenshot-login.png)
 2. **Dashboard:**
    ![Dashboard Screen](Phase5/images/screenshot-dashboard.png)
-3. **Queries & Procedures Screen:**
-   ![Queries & Procedures Screen](Phase5/images/screenshot-queries.png)
+3. **Medications Managment Screen:**
+   ![Queries & Procedures Screen](Phase5/images/screenshot-medications.png)
 4. **Patients Management Screen:**
    ![Patients Management Screen](Phase5/images/screenshot-patients.png)
 5. **Departments/Medications Screen:**
