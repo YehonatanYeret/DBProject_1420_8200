@@ -168,4 +168,20 @@ router.get('/doctor-drug-usage/:doctorId', async (req, res) => {
   }
 });
 
+/**
+ * POST /call-doctor-drug-usage
+ * Calls the calculate_doctor_drug_usage stored procedure for a given doctor.
+ * Expects: { doctorId: number } in body.
+ */
+router.post('/call-doctor-drug-usage', async (req, res) => {
+  const { doctorId } = req.body;
+  try {
+    await pool.query('CALL public.calculate_doctor_drug_usage($1)', [doctorId]);
+    res.json({ success: true });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    res.status(500).json({ error: message });
+  }
+});
+
 export default router; 

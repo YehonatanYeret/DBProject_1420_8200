@@ -13,6 +13,7 @@ const TreatmentsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingTreatment, setEditingTreatment] = useState<Treatment | null>(null);
+  const [newTreatmentDate, setNewTreatmentDate] = useState('');
 
   useEffect(() => {
     fetchData();
@@ -39,10 +40,14 @@ const TreatmentsPage: React.FC = () => {
 
   const handleAdd = () => {
     setEditingTreatment(null);
+    setNewTreatmentDate('');
     setIsModalOpen(true);
   };
 
   const handleEdit = (treatment: Treatment) => {
+    console.log('Editing treatment:', treatment);
+    console.log('Treatment date:', treatment.treatment_date);
+    console.log('Formatted date for input:', formatDateForInput(treatment.treatment_date));
     setEditingTreatment(treatment);
     setIsModalOpen(true);
   };
@@ -50,7 +55,11 @@ const TreatmentsPage: React.FC = () => {
   const handleDelete = async (treatment: Treatment) => {
     if (window.confirm('Are you sure you want to delete this treatment?')) {
       try {
-        await treatmentsApi.delete(treatment.treatment_date, treatment.patient_id, treatment.attending_doctor_id);
+        await treatmentsApi.delete(
+          ensureDatabaseDateFormat(treatment.treatment_date), 
+          treatment.patient_id, 
+          treatment.attending_doctor_id
+        );
         await fetchData();
       } catch (err) {
         setError('Failed to delete treatment');
@@ -61,8 +70,11 @@ const TreatmentsPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
+    const treatment_date = editingTreatment
+      ? formData.get('treatment_date') as string
+      : newTreatmentDate;
     const treatmentData = {
-      treatment_date: formData.get('treatment_date') as string,
+      treatment_date: formatDateForDatabase(treatment_date),
       patient_id: formData.get('patient_id') as string,
       attending_doctor_id: formData.get('attending_doctor_id') as string,
       medications: formData.getAll('medications') as string[]
@@ -71,7 +83,7 @@ const TreatmentsPage: React.FC = () => {
     try {
       if (editingTreatment) {
         await treatmentsApi.update(
-          editingTreatment.treatment_date,
+          ensureDatabaseDateFormat(editingTreatment.treatment_date),
           editingTreatment.patient_id,
           editingTreatment.attending_doctor_id,
           treatmentData.medications
@@ -93,12 +105,54 @@ const TreatmentsPage: React.FC = () => {
       treatment.treatment_date.includes(searchTerm)
   );
 
-  // Helper to format date as YYYY-MM-DD
-  function formatDate(dateString: string | undefined) {
+  // Helper to format date as YYYY-MM-DD for HTML input
+  function formatDateForInput(dateString: string | undefined) {
     if (!dateString) return '';
-    const d = new Date(dateString);
-    if (isNaN(d.getTime())) return '';
-    return d.toISOString().split('T')[0];
+    // Convert from MM/DD/YYYY to YYYY-MM-DD
+    const parts = dateString.split('/');
+    if (parts.length === 3) {
+      const [month, day, year] = parts;
+      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+    }
+    return '';
+  }
+
+  // Helper to format date as MM/DD/YYYY for database
+  function formatDateForDatabase(dateString: string) {
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return '';
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    const year = date.getFullYear();
+    return `${month}/${day}/${year}`;
+  }
+
+  // Helper to ensure date is in MM/DD/YYYY format for API calls
+  function ensureDatabaseDateFormat(dateString: string): string {
+    // If it's already in MM/DD/YYYY format, return as is
+    if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateString)) {
+      return dateString;
+    }
+    // If it's an ISO date or other format, convert to MM/DD/YYYY
+    return formatDateForDatabase(dateString);
+  }
+
+  // Helper to display date in readable format
+  function formatDateForDisplay(dateString: string): string {
+    if (!dateString) return '';
+    // Handle ISO format (e.g., 2025-11-17T22:00:00.000Z)
+    if (dateString.includes('T')) {
+      const d = new Date(dateString);
+      if (!isNaN(d.getTime())) return d.toLocaleDateString();
+    }
+    // Handle MM/DD/YYYY
+    const parts = dateString.split('/');
+    if (parts.length === 3) {
+      const [month, day, year] = parts;
+      const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+      return date.toLocaleDateString();
+    }
+    return dateString;
   }
 
   if (loading) {
@@ -171,7 +225,7 @@ const TreatmentsPage: React.FC = () => {
                       </div>
                       <div>
                         <div className="text-sm text-gray-500">Department: {treatment.department_number}</div>
-                        <div className="text-sm text-gray-500">Date: {new Date(treatment.treatment_date).toLocaleDateString()}</div>
+                        <div className="text-sm text-gray-500">Date: {formatDateForDisplay(treatment.treatment_date)}</div>
                       </div>
                     </div>
                     {treatment.medications && treatment.medications.length > 0 && (
@@ -211,6 +265,14 @@ const TreatmentsPage: React.FC = () => {
         onClose={() => setIsModalOpen(false)}
         title={editingTreatment ? 'Edit Treatment' : 'Add Treatment'}
       >
+        {editingTreatment && (
+          <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-md">
+            <p className="text-sm text-blue-700">
+              <strong>Note:</strong> Only medications can be updated for existing treatments. Date, patient, and doctor cannot be changed.
+            </p>
+          </div>
+        )}
+        
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
@@ -220,14 +282,21 @@ const TreatmentsPage: React.FC = () => {
               >
                 Treatment Date
               </label>
-              <input
-                type="date"
-                name="treatment_date"
-                id="treatment_date"
-                required
-                defaultValue={editingTreatment ? formatDate(editingTreatment.treatment_date) : ''}
-                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-              />
+              {editingTreatment ? (
+                <div className="mt-1 p-2 bg-gray-100 rounded text-gray-700">
+                  {formatDateForDisplay(editingTreatment.treatment_date)}
+                </div>
+              ) : (
+                <input
+                  type="date"
+                  name="treatment_date"
+                  id="treatment_date"
+                  required
+                  value={newTreatmentDate}
+                  onChange={e => setNewTreatmentDate(e.target.value)}
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              )}
             </div>
             <div>
               <label
@@ -240,8 +309,9 @@ const TreatmentsPage: React.FC = () => {
                 name="patient_id"
                 id="patient_id"
                 required
+                disabled={!!editingTreatment}
                 defaultValue={editingTreatment?.patient_id || ''}
-                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
               >
                 <option value="">Select patient</option>
                 {patients.map((patient) => (
@@ -262,8 +332,9 @@ const TreatmentsPage: React.FC = () => {
                 name="attending_doctor_id"
                 id="attending_doctor_id"
                 required
+                disabled={!!editingTreatment}
                 defaultValue={editingTreatment?.attending_doctor_id || ''}
-                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
               >
                 <option value="">Select doctor</option>
                 {doctors.map((doctor) => (

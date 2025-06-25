@@ -43,6 +43,7 @@ router.get('/', async (req, res) => {
 router.get('/:date/:patientId/:doctorId', async (req, res) => {
   try {
     const { date, patientId, doctorId } = req.params;
+    const decodedDate = decodeURIComponent(date);
     const result = await pool.query(`
       SELECT 
         t.treatment_date,
@@ -62,7 +63,7 @@ router.get('/:date/:patientId/:doctorId', async (req, res) => {
                                         AND t.attending_doctor_id = tm.attending_doctor_id
       WHERE t.treatment_date = $1 AND t.patient_id = $2 AND t.attending_doctor_id = $3
       GROUP BY t.treatment_date, t.patient_id, t.attending_doctor_id, p.first_name, p.last_name, d.first_name, d.last_name, dept.department_number
-    `, [date, patientId, doctorId]);
+    `, [decodedDate, patientId, doctorId]);
     
     if (result.rows.length === 0) {
       return res.status(404).json({ error: 'Treatment not found' });
@@ -135,13 +136,14 @@ router.put('/:date/:patientId/:doctorId', async (req, res) => {
     await client.query('BEGIN');
     
     const { date, patientId, doctorId } = req.params;
+    const decodedDate = decodeURIComponent(date);
     const { medications = [] } = req.body;
 
     // Check if treatment exists
     const existingTreatment = await client.query(`
       SELECT 1 FROM treatment 
       WHERE treatment_date = $1 AND patient_id = $2 AND attending_doctor_id = $3
-    `, [date, patientId, doctorId]);
+    `, [decodedDate, patientId, doctorId]);
 
     if (existingTreatment.rows.length === 0) {
       return res.status(404).json({ error: 'Treatment not found' });
@@ -151,7 +153,7 @@ router.put('/:date/:patientId/:doctorId', async (req, res) => {
     await client.query(`
       DELETE FROM treatment_medication 
       WHERE treatment_date = $1 AND patient_id = $2 AND attending_doctor_id = $3
-    `, [date, patientId, doctorId]);
+    `, [decodedDate, patientId, doctorId]);
 
     // Insert new medications if provided
     if (medications.length > 0) {
@@ -159,7 +161,7 @@ router.put('/:date/:patientId/:doctorId', async (req, res) => {
         await client.query(`
           INSERT INTO treatment_medication (treatment_date, patient_id, attending_doctor_id, medication_code)
           VALUES ($1, $2, $3, $4)
-        `, [date, patientId, doctorId, medicationCode]);
+        `, [decodedDate, patientId, doctorId, medicationCode]);
       }
     }
 
@@ -184,12 +186,13 @@ router.delete('/:date/:patientId/:doctorId', async (req, res) => {
     await client.query('BEGIN');
     
     const { date, patientId, doctorId } = req.params;
+    const decodedDate = decodeURIComponent(date);
 
     // Delete treatment (will cascade to treatment_medication)
     const result = await client.query(`
       DELETE FROM treatment 
       WHERE treatment_date = $1 AND patient_id = $2 AND attending_doctor_id = $3
-    `, [date, patientId, doctorId]);
+    `, [decodedDate, patientId, doctorId]);
 
     if (result.rowCount === 0) {
       return res.status(404).json({ error: 'Treatment not found' });

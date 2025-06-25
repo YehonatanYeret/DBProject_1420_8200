@@ -731,7 +731,7 @@ Database backups include the programming data structure to ensure complete recov
    - Navigate to `Phase5/backend` and run:
      ```bash
      npm install
-     npm run dev
+     npm start
      ```
    - The server will run on port 3001.
 
@@ -739,7 +739,7 @@ Database backups include the programming data structure to ensure complete recov
    - Navigate to `Phase5` and run:
      ```bash
      npm install
-     npm start
+     npm run dev
      ```
    - The app will be available at: http://localhost:5173
 
@@ -770,7 +770,7 @@ Database backups include the programming data structure to ensure complete recov
   - `Modal.tsx` - General modals
 
 ### Internal Documentation
-- Every file and component contains documentation and comments (JS/TS Doc, English and Hebrew where relevant)
+- Every file and component contains documentation and comments
 - Variable and function names are clear and descriptive
 - Each backend route is documented at the top of the file
 
@@ -786,6 +786,8 @@ Database backups include the programming data structure to ensure complete recov
    ![Medications Managment Screen](Phase5/images/screenshot-medications.png)
 5. **Departments Management Screen:**
    ![Departments Management Screen](Phase5/images/screenshot-departments.png)
+6. **Treatment Managment Screen:**
+   ![Treatment Managment Screen](Phase5/images/screenshot-treatment.png)
 
 
 ---

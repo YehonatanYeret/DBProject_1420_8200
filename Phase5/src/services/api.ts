@@ -135,7 +135,8 @@ export const treatmentsApi = {
   },
 
   getByKey: async (date: string, patientId: string, doctorId: string): Promise<Treatment> => {
-    const response = await axios.get(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`);
+    const encodedDate = encodeURIComponent(date);
+    const response = await axios.get(`${API_BASE_URL}/treatments/${encodedDate}/${patientId}/${doctorId}`);
     return response.data;
   },
 
@@ -145,12 +146,14 @@ export const treatmentsApi = {
   },
 
   update: async (date: string, patientId: string, doctorId: string, medications: string[]): Promise<void> => {
-    const response = await axios.put(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`, { medications });
+    const encodedDate = encodeURIComponent(date);
+    const response = await axios.put(`${API_BASE_URL}/treatments/${encodedDate}/${patientId}/${doctorId}`, { medications });
     return response.data;
   },
 
   delete: async (date: string, patientId: string, doctorId: string): Promise<void> => {
-    await axios.delete(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`);
+    const encodedDate = encodeURIComponent(date);
+    await axios.delete(`${API_BASE_URL}/treatments/${encodedDate}/${patientId}/${doctorId}`);
   },
 };
 
