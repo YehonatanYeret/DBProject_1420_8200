@@ -37,7 +37,7 @@
     - [Tools & Technologies Used](#tools--technologies-used)
     - [File & Folder Structure](#file--folder-structure)
     - [Internal Documentation](#internal-documentation)
-    - [Screenshots (replace with actual screenshots)](#screenshots-replace-with-actual-screenshots)
+    - [Screenshots](#screenshots)
 
 ---
 
@@ -774,7 +774,7 @@ Database backups include the programming data structure to ensure complete recov
 - Variable and function names are clear and descriptive
 - Each backend route is documented at the top of the file
 
-### Screenshots (replace with actual screenshots)
+### Screenshots
 
 1. **Login Screen:**
    ![Login Screen](Phase5/images/screenshot-login.png)
