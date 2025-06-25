@@ -30,6 +30,22 @@ export interface Department {
   nurse_count: number;
 }
 
+export interface Treatment {
+  treatment_date: string;
+  patient_id: string;
+  attending_doctor_id: string;
+  patient_name: string;
+  doctor_name: string;
+  department_number: number;
+  medications: string[];
+}
+
+export interface Doctor {
+  id_number: string;
+  first_name: string;
+  last_name: string;
+}
+
 // Patients API
 export const patientsApi = {
   getAll: async (): Promise<Patient[]> => {
@@ -108,6 +124,41 @@ export const departmentsApi = {
 
   delete: async (number: number): Promise<void> => {
     await axios.delete(`${API_BASE_URL}/departments/${number}`);
+  },
+};
+
+// Treatments API
+export const treatmentsApi = {
+  getAll: async (): Promise<Treatment[]> => {
+    const response = await axios.get(`${API_BASE_URL}/treatments`);
+    return response.data;
+  },
+
+  getByKey: async (date: string, patientId: string, doctorId: string): Promise<Treatment> => {
+    const response = await axios.get(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`);
+    return response.data;
+  },
+
+  create: async (treatment: { treatment_date: string; patient_id: string; attending_doctor_id: string; medications?: string[] }): Promise<void> => {
+    const response = await axios.post(`${API_BASE_URL}/treatments`, treatment);
+    return response.data;
+  },
+
+  update: async (date: string, patientId: string, doctorId: string, medications: string[]): Promise<void> => {
+    const response = await axios.put(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`, { medications });
+    return response.data;
+  },
+
+  delete: async (date: string, patientId: string, doctorId: string): Promise<void> => {
+    await axios.delete(`${API_BASE_URL}/treatments/${date}/${patientId}/${doctorId}`);
+  },
+};
+
+// Doctors API (from queries)
+export const doctorsApi = {
+  getAll: async (): Promise<Doctor[]> => {
+    const response = await axios.get(`${API_BASE_URL}/queries/doctors`);
+    return response.data;
   },
 };
 

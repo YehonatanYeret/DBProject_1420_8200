@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Home, Users, Pill, Building2, LogOut } from 'lucide-react';
+import { Home, Users, Pill, Building2, Stethoscope, LogOut } from 'lucide-react';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -20,6 +20,7 @@ const Navigation: React.FC = () => {
     { path: '/patients', icon: Users, label: 'Patients' },
     { path: '/medications', icon: Pill, label: 'Medications' },
     { path: '/departments', icon: Building2, label: 'Departments' },
+    { path: '/treatments', icon: Stethoscope, label: 'Treatments' },
   ];
 
   return (

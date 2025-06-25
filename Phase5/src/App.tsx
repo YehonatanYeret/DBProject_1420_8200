@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import PatientsPage from './components/PatientsPage';
 import MedicationsPage from './components/MedicationsPage';
 import DepartmentsPage from './components/DepartmentsPage';
+import TreatmentsPage from './components/TreatmentsPage';
 import Navigation from './components/Navigation';
 import QueriesSection from './components/QueriesSection';
 
@@ -70,6 +71,19 @@ const App: React.FC = () => {
                 <Navigation />
                 <main className="pt-16">
                   <DepartmentsPage />
+                </main>
+              </div>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/treatments"
+          element={
+            <PrivateRoute>
+              <div className="min-h-screen bg-gray-50">
+                <Navigation />
+                <main className="pt-16">
+                  <TreatmentsPage />
                 </main>
               </div>
             </PrivateRoute>

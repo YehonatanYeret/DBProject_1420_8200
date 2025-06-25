@@ -5,6 +5,7 @@ import patientRoutes from './routes/patients';
 import medicationRoutes from './routes/medications';
 import departmentRoutes from './routes/departments';
 import queriesRoutes from './routes/queries';
+import treatmentRoutes from './routes/treatments';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use('/api/patients', patientRoutes);
 app.use('/api/medications', medicationRoutes);
 app.use('/api/departments', departmentRoutes);
 app.use('/api/queries', queriesRoutes);
+app.use('/api/treatments', treatmentRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
