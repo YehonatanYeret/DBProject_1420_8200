@@ -49,7 +49,7 @@ FROM treatment t
 JOIN patient p ON t.patient_id = p.id_number
 GROUP BY blood_type
 ORDER BY treatment_count DESC
-LIMIT 1;
+LIMIT 3;
 
 -- 4: Top 3 Research Doctors Hired in the Last 5 Years
 SELECT p.id_number, first_name, last_name, citation_count
