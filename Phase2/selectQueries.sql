@@ -49,7 +49,7 @@ FROM treatment t
 JOIN patient p ON t.patient_id = p.id_number
 GROUP BY blood_type
 ORDER BY treatment_count DESC
-LIMIT 3;
+LIMIT 1;
 
 -- 4: Top 3 Research Doctors Hired in the Last 5 Years
 SELECT p.id_number, first_name, last_name, citation_count
@@ -58,7 +58,7 @@ JOIN medical_staff ms ON rd.id_number = ms.id_number
 JOIN person p ON ms.id_number = p.id_number
 WHERE EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM ms.hire_date) <= 5
 ORDER BY citation_count DESC
-LIMIT 1;
+LIMIT 3;
 
 -- 5: Most Used Medications per Department
 SELECT d.department_number, m.medication_name, COUNT(*) AS medication_count
