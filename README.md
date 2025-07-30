@@ -178,7 +178,7 @@ Database backups are stored with timestamps to ensure data safety and recovery w
     ![Select Query 6](Phase2/images/Select6.png)
 
 
-7. **מטופלים עם הכי הרבה טיפולים**: מציגה את המטופלים שקיבלו את מספר הטיפולים הגבוה ביותר.
+7. **מטופלים עם הכי הרבה טיפולים**: מציגה את המטופלים לפי סדר של כמות הטיפולים שקיבלו מהגבוה לנמוך.
     ![Select Query 7](Phase2/images/Select7.png)
 
 
