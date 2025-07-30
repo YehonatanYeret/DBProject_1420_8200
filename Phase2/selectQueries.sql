@@ -79,7 +79,7 @@ JOIN attending_doctor ad ON t.attending_doctor_id = ad.id_number
 GROUP BY ad.id_number, t.treatment_date, ad.department_number
 HAVING COUNT(*) > 10;
 
--- 7: Patients with the Highest Number of Treatments
+-- 7: Patients in order of the number of Treatments desc
 SELECT p.first_name, p.last_name, t.patient_id, COUNT(*) AS treatments_count
 FROM treatment t
 JOIN person p ON t.patient_id = p.id_number
