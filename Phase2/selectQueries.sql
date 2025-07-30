@@ -60,7 +60,7 @@ WHERE EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM ms.hire_date) <= 5
 ORDER BY citation_count DESC
 LIMIT 3;
 
--- 5: Most Used Medications per Department
+-- 5: Amount of using Medications per Department
 SELECT d.department_number, m.medication_name, COUNT(*) AS medication_count
 FROM treatment_medication tm
 JOIN treatment t ON tm.treatment_date = t.treatment_date
