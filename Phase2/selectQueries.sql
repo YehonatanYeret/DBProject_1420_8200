@@ -58,9 +58,9 @@ JOIN medical_staff ms ON rd.id_number = ms.id_number
 JOIN person p ON ms.id_number = p.id_number
 WHERE EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM ms.hire_date) <= 5
 ORDER BY citation_count DESC
-LIMIT 1;
+LIMIT 3;
 
--- 5: Most Used Medications per Department
+-- 5: Amount of using Medications per Department
 SELECT d.department_number, m.medication_name, COUNT(*) AS medication_count
 FROM treatment_medication tm
 JOIN treatment t ON tm.treatment_date = t.treatment_date
@@ -79,7 +79,7 @@ JOIN attending_doctor ad ON t.attending_doctor_id = ad.id_number
 GROUP BY ad.id_number, t.treatment_date, ad.department_number
 HAVING COUNT(*) > 10;
 
--- 7: Patients with the Highest Number of Treatments
+-- 7: Patients in order of the number of Treatments desc
 SELECT p.first_name, p.last_name, t.patient_id, COUNT(*) AS treatments_count
 FROM treatment t
 JOIN person p ON t.patient_id = p.id_number
