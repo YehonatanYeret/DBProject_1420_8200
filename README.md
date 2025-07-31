@@ -706,12 +706,18 @@ The first part returns the number of drugs used by each doctor:
 ![First Part of Second Program](Phase4/images/main2.1.jpg)
 
 
-
 Before the second part, the equipment stock table looks like this:
 ![Before Second Program](Phase4/images/main2.2-before.jpg)
 
 After the second part, the equipment stock table looks like this:
 ![After Second Program](Phase4/images/main2.2-after.jpg)
+
+### Additional Phase 4 SQL Files
+
+- **AlterTable.sql**: Contains schema changes, such as adding new columns (e.g., the 'amount' column in treatment_medication).
+- **Functions.sql**: Contains user-defined SQL functions for shift management, medication usage calculation, and retrieving patient medications.
+- **Procedures.sql**: Contains stored procedures for assigning nurses to departments and managing equipment stock.
+- **Triggers.sql**: Contains triggers to enforce business rules, such as preventing negative stock and calculating medication popularity scores.
 
 ### Backup and Restore 4
 Database backups include the programming data structure to ensure complete recovery when needed.
